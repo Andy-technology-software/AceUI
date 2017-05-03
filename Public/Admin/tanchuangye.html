@@ -1,0 +1,268 @@
+
+<title>jqGrid - Ace Admin</title>
+
+<link rel="stylesheet" href="LingUI/css/jquery-ui.min.css" />
+<link rel="stylesheet" href="LingUI/css/datepicker.css" />
+<link rel="stylesheet" href="LingUI/css/ui.jqgrid.css" />
+
+<!-- ajax layout which only needs content area -->
+<style>
+.ui-jqgrid-sortable{text-align: center;}
+.center{text-align: center;}
+
+.page-content{padding-top:0px;}
+.lui-shb-oh{overflow:hidden;margin-top:5px;height:20px;color:#989CA6;cursor: pointer;}
+.lui-sjb-htitle{background-color:#FEAC39;}
+.lui-sjb-more:hover{text-decoration:underline;}
+#gbox_grid-table3{float:right}
+.modal-dialog {
+    width: 600px;
+    margin: 19% auto !important;
+}
+
+.timeline-item .transparent .widget-header{background-color: #F7F7F7 !important;}
+.timeline-item .transparent.widget-box{border-left:none;}
+.timeline-item .widget-toolbox{border-left:2px solid #ccc;}
+.timeline-item .widget-box{background-color: #FFF;}
+.fa-caret-left{font-size: 58px;position: absolute;right: -1px;top: -13px;z-index: 999;color:#F7F7F7;}
+.lui-sjb-hjxx i{color:#FEAC39;}
+.dialogs{width:100%;height:100%;padding-top:0px;padding-bottom:0px;}
+.dialogs span{display: block;}
+.ui-dialog .ui-dialog-content{padding:0;}
+.ui-dialog .ui-dialog-buttonpane{float:none;text-align: center;padding:0.5em;}
+.ui-dialog .ui-dialog-buttonpane button{margin:0.5em;}
+
+
+</style>
+<div class="row">
+
+
+
+
+
+
+	<a href="#" id="id-btn-dialog1" class="btn btn-purple btn-sm">Click</a>
+
+<a href="#" id="id-btn-dialog2" class="btn btn-purple btn-sm">Click!!</a>
+
+<a href="#" id="id-btn-dialog3" class="btn btn-purple btn-sm">Click me too!</a>
+
+</div><!-- /.row -->
+
+<!-- page specific plugin scripts -->
+<div id="dialog-confirm" class="hide">
+											
+
+											<div class="space-6"></div>
+
+											<p class="bigger-110 bolder center grey">
+												<i class="ace-icon fa fa-hand-o-right blue bigger-120"></i>
+												是否确定保存？
+											</p>
+										</div><!-- #dialog-confirm -->
+
+
+
+
+
+
+										<div id="dialog-confirm2" class="hide">
+											
+
+											<div class="space-6"></div>
+
+											<p class="bigger-110 bolder center grey">
+												<i class="ace-icon fa fa-hand-o-right blue bigger-120"></i>
+												保存成功
+											</p>
+										</div>
+
+
+
+
+
+   <div id="dialog-message" class="hide ">
+      <div class="dialogs">
+        <span style="white-space:pre-wrap;word-wrap : break-word ;">
+     人民网2月5日电 海外网“学习小组”公众号关注“习近平剑指官场4种灰色心态”，文章称，在最近的省部级干部研讨班上，习近平首次在公开场合谈了“四个全面”的治国理政布局。其中，“全面从严治党”是一个新提法、新思路。要理解这一思路，“政治规矩”是一个必不可少的关键词。
+
+之前，人民日报海外版刊发的《中共的政治规矩是什么》，已经厘清了政治规矩的概念、内涵，反响热烈。明天，他们将用一个整版，刊发题为《政治规矩打破官场灰色心态》的文章，并授权小组提前发布。
+
+这篇文章提出，官场上的四种“灰色心态”，是习近平提出政治规矩的现实背景。政治规矩的提法，既是剑指这四种心态，也意在打破这些心态。
+
+文章长，但读下来必有裨益，推荐给各位组员学习。另，文章中的表述，以明天人民日报海外版的见报版本为准。
+
+政治规矩打破官场灰色心态
+
+1月29日，本报刊发《中共的政治规矩是什么》一文（小组注：回复“规矩”可见），引发读者热议。对于“政治规矩”这一理解中国当下政治思路的关键词，不仅需要厘清概念，同时要理解为何立政治规矩、如何执行政治规矩。
+
+在我们看来，讲政治规矩，就是要打破长期以来官场存在的一些“灰色心态”。这些心态，有的已经被十八大以来的党风廉政建设和反腐败斗争所震慑、所涤荡，有些目前依然在官场上存在。
+
+换句话说，讲政治规矩，事关“破”，也事关“立”。破除积弊、立下新规，“明制度于前，重威刑于后”。
+
+1 对反腐性质认识的灰色心态
+
+十八届中央纪委五次全会上，对于反腐的态势，习近平下了“依然严峻复杂”的判断。这场“输不起的斗争”，注定是一场攻坚战、持久战。
+
+这着实打破了一些人此前的“观望”心态。这种心态，通俗地说，就是认为“反腐败是刮一阵风，搞一段时间就会过去”，大不了“现在打枪，暂且低头”。
+
+但十八大以来的反腐风暴的持续之久、力度之大，已经给予了这种心态以事实上的打击。十八大以来，以周永康、徐才厚、令计划、苏荣等“大老虎”的倒掉为标志，对高级干部的查处力度称得上“前所未有”。仅2014年，中央就立案查处了54名中管干部。同时“老虎、苍蝇一起打”的原则下，即使是“蝇头小吏”，只要违纪违法，也逃不过高压的反腐态势。
+
+那么，反腐败的力度如此之大，是不是会损害党和政府的形象？是不是如一些人说的那样，“不反腐亡国、真反腐亡党”？
+
+当然不是。习近平在多个场合论述道，不反腐确实有亡党的危险，真反腐才能净化党的肌体，才能真正兴党兴国。至于查处了多少高级干部、和以往相比力度加大了多少，习近平也说，“不要算这个账，有贪必反，有腐必惩”，“不定指标、上不封顶，凡腐必反，除恶务尽”。
+
+之所以有观望的灰色心态，说到底，还是因为对反腐败斗争性质的认识出了偏差，低估了中央对反腐的决心和态度。
+
+反腐败是一件“得罪人”的事情。但如果不得罪成百上千的腐败分子，就要得罪13亿人民。这是一笔再明白不过的“政治账”、也是一笔人心向背的账。之所以对腐败采取零容忍的态度，说到底，就是为了赢得党心民心。
+
+还有一些人，将反腐认为是“政治斗争”、“排除异己的工具”，这种心态就更加错误甚至是荒谬了。无论是已经被公诉的官员，还是一些落马贪官的写的“忏悔录”，都已经明白无疑地交代了违法乱纪的事实，铁证如山，不容置喙。
+
+也就是说，反腐从来不是什么“个人恩怨”。正因此，我们才说，无论是谁，无论担任过什么职务，只要违反党纪国法，都绝不姑息。在反腐问题上，没有谁能当“铁帽子王”。111111
+        </span>
+
+      </div>
+
+</div>
+
+<script src="LingUI/js/jquery-ui.min.js"></script>
+<script type="text/javascript">
+var scripts = [null,"LingUI/js/date-time/bootstrap-datepicker.min.js","LingUI/js/jqGrid/jquery.jqGrid.min.js","LingUI/js/jqGrid/i18n/grid.locale-en.js", null]
+  ace.load_ajax_scripts(scripts, function() {
+      jQuery(function($) {
+
+$( "#id-btn-dialog2" ).on('click', function(e) {
+					e.preventDefault();
+				
+					$( "#dialog-confirm" ).removeClass('hide').dialog({
+						resizable: false,
+						modal: true,
+						title: "<div class='widget-header '><h4 class='smaller'><i class='ace-icon fa fa-exclamation-triangle red'></i>确定保存</h4></div>",
+						title_html: true,
+						buttons: [
+							{
+								html: "<i class='ace-icon fa fa-check bigger-110 '></i>&nbsp; 确定",
+								"class" : "btn btn-primary btn-xs",
+								click: function() {
+									$( this ).dialog( "close" );
+								}
+							}
+							,
+							{
+								html: "<i class='ace-icon fa fa-times bigger-110'></i>&nbsp; 取消",
+								"class" : "btn btn-xs",
+								click: function() {
+									$( this ).dialog( "close" );
+								}
+							}
+						]
+					});
+				});
+
+var availableTags = [
+					"ActionScript",
+					"AppleScript",
+					"Asp",
+					"BASIC",
+					"C",
+					"C++",
+					"Clojure",
+					"COBOL",
+					"ColdFusion",
+					"Erlang",
+					"Fortran",
+					"Groovy",
+					"Haskell",
+					"Java",
+					"JavaScript",
+					"Lisp",
+					"Perl",
+					"PHP",
+					"Python",
+					"Ruby",
+					"Scala",
+					"Scheme"
+				];
+				$( "#tags" ).autocomplete({
+					source: availableTags
+				});        $('.dialogs,.comments').ace_scroll({
+          size: 400
+          });
+
+
+$( "#id-btn-dialog3" ).on('click', function(e) {
+					e.preventDefault();
+				
+					$( "#dialog-confirm2" ).removeClass('hide').dialog({
+						resizable: false,
+						modal: true,
+						title: "<div class='widget-header '><h4 class='smaller'><i class='ace-icon fa fa-check'></i>确定保存</h4></div>",
+						title_html: true,
+						buttons: [
+							{
+								html: "<i class='ace-icon fa fa-check bigger-110 '></i>&nbsp; 确定",
+								"class" : "btn btn-primary btn-xs",
+								click: function() {
+									$( this ).dialog( "close" );
+								}
+							}
+							
+						]
+					});
+				});
+        
+
+        var agent = navigator.userAgent.toLowerCase();
+        if("ontouchstart" in document && /applewebkit/.test(agent) && /android/.test(agent))
+          $('#tasks').on('touchstart', function(e){
+          var li = $(e.target).closest('#tasks li');
+          if(li.length == 0)return;
+          var label = li.find('label.inline').get(0);
+          if(label == e.target || $.contains(label, e.target)) e.stopImmediatePropagation() ;
+        });
+
+        //override dialog's title function to allow for HTML titles
+        $.widget("ui.dialog", $.extend({}, $.ui.dialog.prototype, {
+          _title: function(title) {
+            var $title = this.options.title || '&nbsp;'
+            if( ("title_html" in this.options) && this.options.title_html == true )
+              title.html($title);
+            else title.text($title);
+          }
+        }));
+      
+        $( "#id-btn-dialog1" ).on('click', function(e) {
+          e.preventDefault();
+      
+          var dialog = $( "#dialog-message" ).removeClass('hide').dialog({
+            resizable: false,
+            modal: true,
+            title: "<div class='widget-header widget-header-small'><h4 class='smaller'><i class='ace-icon fa fa-check'></i> 添加页</h4></div>",
+            title_html: true,
+            width:700,
+            height:500,
+            buttons: [ 
+              {
+                text: "确定",
+                "class" : "btn btn-primary btn-xs",
+                click: function() {
+                  $( this ).dialog( "close" ); 
+                } 
+              },
+              {
+               
+                   text: "取消",
+                "class" : "btn btn-xs",
+                click: function() {
+                  $( this ).dialog( "close" ); 
+                } 
+              }
+            ]
+          });
+      
+        
+        });
+      
+      });
+ })
+    </script>

@@ -1,0 +1,1220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<title>jqGrid - Ace Admin</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="../LingUI/css/jquery-ui.min.css" />
+<link rel="stylesheet" href="../LingUI/css/datepicker.css" />
+<link rel="stylesheet" href="../LingUI/css/ui.jqgrid.css" />
+
+
+<!-- ajax layout which only needs content area -->
+<style>
+.page-content{padding-top:0px;}
+.lui-shb-oh{overflow:hidden;margin-top:5px;height:20px;color:#989CA6;cursor: pointer;}
+.lui-sjb-htitle{background-color:#FEAC39;}
+.lui-sjb-more:hover{text-decoration:underline;}
+#gbox_grid-table3{float:right}
+.modal-dialog {
+    width: 600px;
+    margin: 19% auto !important;
+}
+
+.timeline-item .transparent .widget-header{background-color: #F7F7F7 !important;}
+.timeline-item .transparent.widget-box{border-left:none;}
+.timeline-item .widget-toolbox{border-left:2px solid #ccc;}
+.timeline-item .widget-box{background-color: #FFF;}
+.fa-caret-left{font-size: 58px;position: absolute;right: -1px;top: -13px;z-index: 999;color:#F7F7F7;}
+.lui-sjb-hjxx i{color:#FEAC39;}
+.dialogs{width:100%;height:100%;padding-top:0px;padding-bottom:0px;}
+.dialogs span{display: block;}
+.ui-dialog .ui-dialog-content{padding:0;}
+.ui-dialog .ui-dialog-buttonpane{margin-top:0;}
+.ui-dialog-buttonset button{text-align: center !important;}
+
+</style>
+
+<div class="row lui-sjb">
+	<div class="col-xs-12 col-sm-12 widget-container-col lui-lcy">
+										<div class="widget-box">
+											
+
+											<div class="widget-body">
+												<div class="widget-main" style="padding-top:0px;">
+													<div class="row">
+														
+													</div>
+											
+												
+													<div class="row";>
+													<div class="col-md-12" style="padding-left:0px;padding-right:0px;">
+										<div class="tabbable tabs-left">
+											
+
+											<div class="tab-content" id="liuchengkuang">
+												<div id="home3" class="tab-pane in active">
+													
+<div class="row">
+  <div class="col-xs-12">
+    <form class="form-horizontal">
+      <div class="tabbable">
+        <h4 class="header blue bolder smaller">基本信息
+						  <div class="pull-right action-buttons">
+						  <a data-url="page/sales_manage_edit" href="ajax.html#page/sales_manage_edit" ><i class="ace-icon fa fa-pencil blue"></i></a>
+						  <a class=""  style="left:5px;top:3px;" 	href="#"  id="id-btn-dialog1"><i class="fa  fa-location-arrow blue"> </i></a> 
+                
+						  </div><!--Social --></h4>
+                          <div class="row panel-collapse collapse in"  id="faq-1-xx">
+                            <div class="col-xs-12 col-sm-6">
+                              <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right" for="form-field-username">客户名称：</label>
+                                <div class="col-sm-9">
+                                  <!--<input class="col-xs-12 col-sm-6" type="text" id="form-field-username" /*placeholder="Username"*/ />-->
+								  <label  class="b_info">青岛海尔集团</label>
+                                </div>
+                              </div>
+                              <div class="space-4"></div>
+                              <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right" for="form-field-first">预算：</label>
+                                <div class="col-sm-9">
+                                  <label  class="b_info">￥0</label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="vspace-12-sm"></div>
+                            <div class="col-xs-12 col-sm-6">
+                              <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right" for="form-field-username">当前阶段：</label>
+                                <div class="col-sm-9">
+                                  <label  class="b_info" style="color:red">需求分析</label>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="col-xs-12 col-sm-6">
+                              <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right" for="form-field-username">产品金额：</label>
+                                <div class="col-sm-9">
+                                  <label  class="b_info">￥6000</label>
+                                </div>
+                              </div>
+                              
+                              <div class="space-4"></div>
+                            </div>
+							<div class="col-xs-12 col-sm-6">
+                              <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right" for="form-field-username">线索：</label>
+                                <div class="col-sm-9">
+                                  <label  class="b_info">杨经理</label>
+                                </div>
+                              </div>
+                              
+                              <div class="space-4"></div>
+                            </div>
+							<div class="col-xs-12 col-sm-6">
+                              <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right" for="form-field-username">线索来源：</label>
+                                <div class="col-sm-9">
+                                  <label  class="b_info">朋友介绍</label>
+                                </div>
+                              </div>
+                              
+                              <div class="space-4"></div>
+                            </div>
+							<div class="col-xs-12 col-sm-6">
+                              <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right" for="form-field-username">开始日期：</label>
+                                <div class="col-sm-9">
+                                  <label  class="b_info">2015-01-10</label>
+                                </div>
+                              </div>
+                              
+                              <div class="space-4"></div>
+                            </div>
+							<div class="col-xs-12 col-sm-6">
+                              <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right" for="form-field-username">市场活动：</label>
+                                <div class="col-sm-9">
+                                  <label  class="b_info">年终大促销</label>
+                                </div>
+                              </div>
+                              
+                              <div class="space-4"></div>
+                            </div>
+							<h4 class="header blue bolder smaller accordion-toggle collapsed">销售机会明细<a href="#faq-1-mx" data-parent="#faq-list-1" data-toggle="collapse"> <i class="ace-icon fa fa-chevron-up pull-right" data-icon-hide="ace-icon fa fa-chevron-down" data-icon-show="ace-icon fa fa-chevron-up"></i></a><!--Social --></h4>
+							<div class="row panel-collapse collapse "  id="faq-1-mx">
+									<div class="col-xs-12 " style="padding:0px;">
+										
+										<table id="grid-table3"></table>
+										<div id="grid-pager3"></div>
+									</div>
+								<div class="vspace-12-sm"></div>
+							 </div>	  
+		    <div class="col-sm-12">
+                    <!-- 我的活动市场  begin-->
+                    <div class="widget-box transparent  b_padding">
+                        <div class="widget-header widget-header-flat">
+                            <h4 class="widget-title lighter">
+													<i class="fa fa-sitemap fa-lg purple"></i>
+													流程图
+												</h4>
+
+                            <div class="widget-toolbar">
+                                <a href="#"><i class="fa fa-cog"></i></a>
+								
+                                <a href="#"><i class="fa fa-refresh green"></i></a> 
+                                <a href="#" data-action="collapse"><i class="ace-icon fa fa-chevron-up"></i></a>	
+                                <a href="#"><i class="fa fa-times red"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="widget-body">
+                            <div class="widget-main no-padding">
+                                <div class="timeline-container">
+												
+
+												<div class="timeline-items">
+													<div class="timeline-item clearfix">
+														
+														
+														<div class="timeline-info">
+															<i class="timeline-indicator ace-icon fa fa-puzzle-piece no-hover"></i>
+															<span class="label  label-sm huise">机会识别</span>
+                              <i class="ace-icon fa fa-caret-left piaofu11 "></i>
+														</div>
+
+														<div class="widget-box transparent">
+															<div class="widget-header widget-header-small">
+																<h5 class="widget-title smaller">
+																	
+																	<span class="" style="font-size:16px;font-weight:bold;">机会识别</span>
+																</h5>
+
+
+																<span class="widget-toolbar">
+																	<a href="#" data-action="reload">
+																		<i class="ace-icon fa fa-refresh"></i>
+																	</a>
+
+																	<a  href="#faq-1-1" data-parent="#faq-list-1" data-toggle="collapse" >
+																		<i class="ace-icon fa fa-chevron-up pull-right" data-icon-hide="ace-icon fa fa-chevron-up" data-icon-show="ace-icon fa fa-chevron-down"></i>
+																	</a>
+																</span>
+															</div>
+
+															<div class="widget-body panel-collapse collapse in" id="faq-1-1">
+																<div class="widget-main lui-pd0" style="border: 2px solid #F7F7F7;border-top:none;border-radius:0px 0px 10px 10px;">
+																	
+												<div class="col-md-10 lui-pd0" style="float:left;padding-bottom:15px;">
+                                             
+                                                  <div class="widget-toolbox clearfix">
+                                                    <div class="col-lg-12 lui-sjb-lh"  style=" padding-bottom:10px;padding-right:0; ">
+                                                    
+                                                   
+                                                      <div class="col-lg-12 lui-sjb-ml">
+                                                      
+                                                        <div class="col-lg-6   "><span  style="color:#609ED1">机会星级：</span> <span class="lui-sjb-hjxx"><i class="ace-icon fa fa-star"></i><i class="ace-icon fa fa-star"></i><i class="ace-icon fa fa-star"></i><i class="ace-icon fa fa-star-o"></i><i class="ace-icon fa fa-star-o"></i></span> </div>
+                                                        <div class="col-lg-6">  <span class="lui-sjb-ml2" style="">阶段状态：</span> <span style="display: inline;" class="editable editable-click" id="username">已完成</span> </div>
+
+                                                        <div class="col-lg-6">  <span  style="color:#609ED1">联&nbsp;&nbsp;系&nbsp;&nbsp;人：</span> 0532-xxxx-xxxx</div>
+                                                        <div class="col-lg-6"> <span class="lui-sjb-ml2" style="">线索来源：</span> <span>电话资料</span> </div>
+                                                        <div class="col-lg-6"> <span  style="color:#609ED1">开始时间：</span> <span>2015/1/20 8:30</span> </div>
+                                                        <div class="col-lg-6"> <span class="lui-sjb-ml2" style="">结束时间：</span> <span>2015/1/26 16:50</span> </div>
+                                                      </div>
+                                                      <!--col-lg-12  end-->
+                                                      <div class="col-lg-12"  style="margin-left:-25px;padding-right:0;">
+                                                        <div class="col-lg-12" style="padding-right:0;"> <span  style="color:#609ED1">备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注：</span> <span>相关信息展示信息</span> </div>
+                                                      </div>
+                                                      <!-- col-lg-12  end--> 
+                                                      
+                                                    </div>
+                                                    <!--   名称  end-->
+                                                     <div class="col-md-12 col-xs-12 lui-pd0">
+                                                     	<div class="pull-left col-lg-10 col-xs-11 lui-sjb-xgxd">
+                                                        <i class="ace-icon fa fa-check-square-o "></i>
+                                                     		<span>相关行动</span>
+                                                     		<a href="" class="blue pull-right lui-sjb-more">更多</a><a href="#" class="blue pull-right"> <i class="ace-icon fa fa-plus bigger-130"></i> &nbsp;&nbsp;&nbsp;</a>
+                                                     	</div>
+                                                  <div class="pull-left col-lg-10 lui-shb-oh "> <span class="col-md-10 lui-pd0"> <i class="ace-icon fa fa-circle  small">&nbsp;&nbsp;&nbsp;&nbsp;</i><h10>2015/1/26&nbsp;&nbsp;</h10>我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱</span>
+                                                    <div class="tools action-buttons col-md-2 pull-right text-right lui-pd0 lui-sjb-ycan">
+                                                      <a href="#" class="blue">
+                                                       <i class="ace-icon fa fa-pencil bigger-125"></i>
+                                                      </a>
+
+                                                     <a href="#" class="red">
+                                                          <i class="ace-icon fa fa-times bigger-125"></i>
+                                                      </a>
+                                                      </div>
+                                                    
+                                                    </div>
+                                                    
+                                                 
+                                                   <div class="pull-left col-lg-10 lui-shb-oh "> <span class="col-md-10 lui-pd0"> <i class="ace-icon fa fa-circle  small">&nbsp;&nbsp;&nbsp;&nbsp;</i><h10>2015/1/26&nbsp;&nbsp;</h10>我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱</span>
+                                                    <div class="tools action-buttons col-md-2 pull-right text-right lui-pd0 lui-sjb-ycan">
+                                                      <a href="#" class="blue">
+                                                       <i class="ace-icon fa fa-pencil bigger-125"></i>
+                                                      </a>
+
+                                                     <a href="#" class="red">
+                                                          <i class="ace-icon fa fa-times bigger-125"></i>
+                                                      </a>
+                                                      </div>
+                                                    
+                                                    </div>
+                                                 
+                                                
+                                                
+                                                    <div class="pull-left col-lg-10 lui-shb-oh "> <span class="col-md-10 lui-pd0"> <i class="ace-icon fa fa-circle  small">&nbsp;&nbsp;&nbsp;&nbsp;</i><h10>2015/1/26&nbsp;&nbsp;</h10>我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱</span>
+                                                    <div class="tools action-buttons col-md-2 pull-right text-right lui-pd0 lui-sjb-ycan">
+                                                      <a href="#" class="blue">
+                                                       <i class="ace-icon fa fa-pencil bigger-125"></i>
+                                                      </a>
+
+                                                     <a href="#" class="red">
+                                                          <i class="ace-icon fa fa-times bigger-125"></i>
+                                                      </a>
+                                                      </div>
+                                                    
+                                                    </div>
+                                                   
+                                                    <div class="space-6"></div>
+                                                    </div>
+                                                 
+                                                  </div>
+
+                                                </div>
+                                          
+                                            				   
+                                          <div class="col-md-2" style="height:auto;padding:0;margin-top:15px;">
+                                              <div class="col-md-12 col-xs-12 lui-sjb-ztjc" style="padding:5px 12px 5px 12px;float:left"> <i class="ace-icon fa fa-thumb-tack lui-sjb-hsxx blue bigger-140"></i> 可采取动作 </div>
+                                              <div class="col-md-12 col-xs-6 lui-sjb-butk" style="margin-top:20px;">
+                                                <div class="center col-md-6 col-xs-6 lui-sjb-butk-l" >
+                                                  <button class="btn btn-app btn-danger btn-xs "> <i class="ace-icon fa fa-pencil-square-o  bigger-180"></i> 机会查重 <span class="badge lui-sjb-htitle"><i class="ace-icon fa fa-check"></i></span></button>
+                                                </div>
+                                                <div class="center col-md-6 col-xs-6">
+                                                  <button class="btn btn-app btn-info btn-xs"> <i class="ace-icon fa fa-envelope bigger-180"></i> 分配确认 <span class="badge lui-sjb-htitle"><i class="ace-icon fa fa-check"></i></span></button>
+                                                </div>
+                                              </div>
+
+                                              <div class="col-md-12 col-xs-6 lui-sjb-butk" style="margin-top:20px;padding-bottom:10px;">
+                                                <div class="center col-md-6 col-xs-6 lui-sjb-butk-l" >
+                                                  <button class="btn btn-app btn-info btn-xs"> <i class="ace-icon fa fa-list  bigger-180"></i> 机会评估 <span class="badge lui-sjb-htitle"><i class="ace-icon fa fa-check"></i></span></button>
+                                                </div>
+                                                <div class=" center col-md-6 col-xs-6">
+                                                  <button class="btn btn-app btn-info btn-xs"> <i class="ace-icon fa fa-inbox  bigger-180"></i> 申请资源 <span class="badge lui-sjb-htitle"><i class="ace-icon fa fa-check"></i></span></button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                      
+
+ 
+																	<div class="widget-toolbox clearfix">
+																		
+
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="timeline-item clearfix">
+														
+														
+														<div class="timeline-info"> <i class="timeline-indicator ace-icon fa fa-signal no-hover"></i> <span class="label  label-sm lvse">需求分析</span> </div>
+
+														<div class="widget-box transparent">
+															<div class="widget-header widget-header-small">
+																<h5 class="widget-title smaller">
+																	
+																	<span class="" style="font-size:16px;font-weight:bold;">需求分析</span>
+																</h5>
+
+
+																<span class="widget-toolbar">
+																	<a href="#" data-action="reload">
+																		<i class="ace-icon fa fa-refresh"></i>
+																	</a>
+
+																	<a  href="#faq-1-2" data-parent="#faq-list-1" data-toggle="collapse" >
+																		<i class="ace-icon fa fa-chevron-up pull-right" data-icon-hide="ace-icon fa fa-chevron-up" data-icon-show="ace-icon fa fa-chevron-down"></i>
+																	</a>
+																</span>
+															</div>
+
+															<div class="widget-body panel-collapse collapse in" id="faq-1-2">
+																<div class="widget-main lui-pd0">
+																	
+												<div class="col-md-10 lui-pd0" style="float:left;padding-bottom:15px;">
+                                             
+                                                  <div class="widget-toolbox clearfix">
+                                                    <div class="col-lg-12 lui-sjb-lh"  style=" padding-bottom:10px;padding-right:0; ">
+                                                    
+                                                   
+                                                      <div class="col-lg-12 lui-sjb-ml">
+                                                      
+                                                        <div class="col-lg-6   "><span  style="color:#609ED1">机会星级：</span> <span><i class="ace-icon fa fa-star"></i><i class="ace-icon fa fa-star"></i><i class="ace-icon fa fa-star"></i><i class="ace-icon fa fa-star-o"></i><i class="ace-icon fa fa-star-o"></i></span> </div>
+                                                        <div class="col-lg-6">  <span class="lui-sjb-ml2" style="">阶段状态：</span> <span style="display: inline;" class="editable editable-click" id="username">已完成</span> </div>
+
+                                                        <div class="col-lg-6">  <span  style="color:#609ED1">联&nbsp;&nbsp;系&nbsp;&nbsp;人：</span> <a>0532-xxxx-xxxx</a>&nbsp;&nbsp;&nbsp;&nbsp;<i class="ace-icon fa fa-plus bigger-130"></i> </div>
+                                                        <div class="col-lg-6"> <span class="lui-sjb-ml2" style="">销售预期：</span> <span>5000</span> </div>
+                                                        <div class="col-lg-6"> <span  style="color:#609ED1">开始时间：</span> <span>2015/1/20 8:30</span> </div>
+                                                        <div class="col-lg-6"> <span class="lui-sjb-ml2" style="">结束时间：</span> <span>2015/1/26 16:50</span> </div>
+                                                      </div>
+                                                      <!--col-lg-12  end-->
+                                                      <div class="col-lg-12"  style="margin-left:-25px;padding-right:0;">
+                                                        <div class="col-lg-12" style="padding-right:0;"> <span  style="color:#609ED1">备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注：</span> <span>相关信息展示信息</span> </div>
+                                                      </div>
+                                                      <!-- col-lg-12  end--> 
+                                                      
+                                                    </div>
+                                                    <!--   名称  end-->
+                                                     <div class="col-md-12 col-xs-12 lui-pd0">
+                                                     	<div class="pull-left col-lg-10 col-xs-11 lui-sjb-xgxd">
+                                                        <i class="ace-icon fa fa-check-square-o "></i>
+                                                     		<span>相关行动</span>
+                                                     		<a href="" class="blue pull-right lui-sjb-more">更多</a><a href="#" class="blue pull-right"> <i class="ace-icon fa fa-plus bigger-130"></i> &nbsp;&nbsp;&nbsp;</a>
+                                                     	</div>
+                                                  <div class="pull-left col-lg-10 lui-shb-oh "> <span class="col-md-10 lui-pd0"> <i class="ace-icon fa fa-circle  small">&nbsp;&nbsp;&nbsp;&nbsp;</i><h10>2015/1/26&nbsp;&nbsp;</h10>我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱</span>
+                                                    <div class="tools action-buttons col-md-2 pull-right text-right lui-pd0 lui-sjb-ycan">
+                                                      <a href="#" class="blue">
+                                                       <i class="ace-icon fa fa-pencil bigger-125"></i>
+                                                      </a>
+
+                                                     <a href="#" class="red">
+                                                          <i class="ace-icon fa fa-times bigger-125"></i>
+                                                      </a>
+                                                      </div>
+                                                    
+                                                    </div>
+                                                    
+                                                 
+                                                   <div class="pull-left col-lg-10 lui-shb-oh "> <span class="col-md-10 lui-pd0"> <i class="ace-icon fa fa-circle  small">&nbsp;&nbsp;&nbsp;&nbsp;</i><h10>2015/1/26&nbsp;&nbsp;</h10>我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱</span>
+                                                    <div class="tools action-buttons col-md-2 pull-right text-right lui-pd0 lui-sjb-ycan">
+                                                      <a href="#" class="blue">
+                                                       <i class="ace-icon fa fa-pencil bigger-125"></i>
+                                                      </a>
+
+                                                     <a href="#" class="red">
+                                                          <i class="ace-icon fa fa-times bigger-125"></i>
+                                                      </a>
+                                                      </div>
+                                                    
+                                                    </div>
+                                                 
+                                                
+                                                
+                                                    <div class="pull-left col-lg-10 lui-shb-oh "> <span class="col-md-10 lui-pd0"> <i class="ace-icon fa fa-circle  small">&nbsp;&nbsp;&nbsp;&nbsp;</i><h10>2015/1/26&nbsp;&nbsp;</h10>我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱</span>
+                                                    <div class="tools action-buttons col-md-2 pull-right text-right lui-pd0 lui-sjb-ycan">
+                                                      <a href="#" class="blue">
+                                                       <i class="ace-icon fa fa-pencil bigger-125"></i>
+                                                      </a>
+
+                                                     <a href="#" class="red">
+                                                          <i class="ace-icon fa fa-times bigger-125"></i>
+                                                      </a>
+                                                      </div>
+                                                    
+                                                    </div>
+                                                   
+                                                    <div class="space-6"></div>
+                                                    </div>
+                                                 
+                                                  </div>
+
+                                                </div>
+                                          
+                                            				   
+                                          <div class="col-md-2" style="height:auto;padding:0;margin-top:15px;">
+                                              <div class="col-md-12 col-xs-12 lui-sjb-ztjc" style="padding:5px 12px 5px 12px;float:left"> <i class="ace-icon fa fa-thumb-tack lui-sjb-hsxx blue bigger-140"></i> 可采取动作 </div>
+                                              <div class="col-md-12 col-xs-6 lui-sjb-butk" style="margin-top:20px;">
+                                                <div class="center col-md-6 col-xs-6 lui-sjb-butk-l" >
+                                                  <button class="btn btn-app btn-danger btn-xs "> <i class="ace-icon fa fa-pencil-square-o  bigger-180"></i> 拜访客户 <span class="badge lui-sjb-htitle"><i class="ace-icon fa fa-check"></i></span></button>
+                                                </div>
+                                                <div class="center col-md-6 col-xs-6">
+                                                  <button class="btn btn-app btn-info btn-xs"> <i class="ace-icon fa fa-envelope bigger-180"></i> 沟通交流 <span class="badge lui-sjb-htitle"><i class="ace-icon fa fa-check"></i></span></button>
+                                                </div>
+                                              </div>
+
+                                              <div class="col-md-12 col-xs-6 lui-sjb-butk" style="margin-top:20px;padding-bottom:10px;">
+                                                <div class="center col-md-6 col-xs-6 lui-sjb-butk-l" >
+                                                  <button class="btn btn-app btn-info btn-xs"> <i class="ace-icon fa fa-list  bigger-180"></i> 会议 <span class="badge lui-sjb-htitle"><i class="ace-icon fa fa-check"></i></span></button>
+                                                </div>
+                                                <div class=" center col-md-6 col-xs-6">
+                                                  <button class="btn btn-app btn-info btn-xs"> <i class="ace-icon fa fa-inbox  bigger-180"></i> 电话联系 <span class="badge lui-sjb-htitle"><i class="ace-icon fa fa-check"></i></span></button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                      
+
+ 
+																	<div class="widget-toolbox clearfix">
+																		
+
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="timeline-item clearfix">
+														
+														
+														<div class="timeline-info">
+															<i class="timeline-indicator ace-icon fa fa-gavel no-hover"></i>
+															<span class="label  label-sm huangse">方案谈判</span>
+														</div>
+
+														<div class="widget-box transparent">
+															<div class="widget-header widget-header-small">
+																<h5 class="widget-title smaller">
+																	
+																	<span class="" style="font-size:16px;font-weight:bold;">方案谈判</span>
+																</h5>
+
+
+																<span class="widget-toolbar">
+																	<a href="#" data-action="reload">
+																		<i class="ace-icon fa fa-refresh"></i>
+																	</a>
+
+																	<a  href="#faq-1-3" data-parent="#faq-list-1" data-toggle="collapse" >
+																		<i class="ace-icon fa fa-chevron-down pull-right"   data-icon-hide="ace-icon fa fa-chevron-up" data-icon-show="ace-icon fa fa-chevron-down"></i>
+																	</a>
+																</span>
+															</div>
+
+															<div class="widget-body panel-collapse collapse" id="faq-1-3">
+																<div class="widget-main lui-pd0">
+																	
+												<div class="col-md-10 lui-pd0" style="float:left;padding-bottom:15px;">
+                                             
+                                                  <div class="widget-toolbox clearfix">
+                                                    <div class="col-lg-12 lui-sjb-lh"  style=" padding-bottom:10px;padding-right:0; ">
+                                                    
+                                                   
+                                                      <div class="col-lg-12 lui-sjb-ml">
+                                                      
+                                                        <div class="col-lg-6   "><span  style="color:#609ED1">机会星级：</span> <span><i class="ace-icon fa fa-star"></i><i class="ace-icon fa fa-star"></i><i class="ace-icon fa fa-star"></i><i class="ace-icon fa fa-star-o"></i><i class="ace-icon fa fa-star-o"></i></span> </div>
+                                                        <div class="col-lg-6">  <span class="lui-sjb-ml2" style="">阶段状态：</span> <span style="display: inline;" class="editable editable-click" id="username">已完成</span> </div>
+
+                                                        <div class="col-lg-6">  <span  style="color:#609ED1">联&nbsp;&nbsp;系&nbsp;&nbsp;人：</span> <a>0532-xxxx-xxxx</a> &nbsp;&nbsp;&nbsp;&nbsp;<i class="ace-icon fa fa-plus bigger-130"></i></div>
+                                                        <div class="col-lg-6"> <span class="lui-sjb-ml2" style="">相关附件：</span> <span><a>方案说明书<a/></span> </div>
+                                                        <div class="col-lg-6"> <span  style="color:#609ED1">开始时间：</span> <span>2015/1/20 8:30</span> </div>
+                                                        <div class="col-lg-6"> <span class="lui-sjb-ml2" style="">结束时间：</span> <span>2015/1/26 16:50</span> </div>
+                                                      </div>
+                                                      <!--col-lg-12  end-->
+                                                      <div class="col-lg-12"  style="margin-left:-25px;padding-right:0;">
+                                                        <div class="col-lg-12" style="padding-right:0;"> <span  style="color:#609ED1">备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注：</span> <span>相关信息展示信息</span> </div>
+                                                      </div>
+                                                      <!-- col-lg-12  end--> 
+                                                      
+                                                    </div>
+                                                    <!--   名称  end-->
+                                                     <div class="col-md-12 col-xs-12 lui-pd0">
+                                                     	<div class="pull-left col-lg-10 col-xs-11 lui-sjb-xgxd">
+                                                        <i class="ace-icon fa fa-check-square-o "></i>
+                                                     		<span>相关行动</span>
+                                                     		<a href="" class="blue pull-right lui-sjb-more">更多</a><a href="#" class="blue pull-right"> <i class="ace-icon fa fa-plus bigger-130"></i> &nbsp;&nbsp;&nbsp;</a>
+                                                     	</div>
+                                                  <div class="pull-left col-lg-10 lui-shb-oh "> <span class="col-md-10 lui-pd0"> <i class="ace-icon fa fa-circle  small">&nbsp;&nbsp;&nbsp;&nbsp;</i><h10>2015/1/26&nbsp;&nbsp;</h10>我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱</span>
+                                                    <div class="tools action-buttons col-md-2 pull-right text-right lui-pd0 lui-sjb-ycan">
+                                                      <a href="#" class="blue">
+                                                       <i class="ace-icon fa fa-pencil bigger-125"></i>
+                                                      </a>
+
+                                                     <a href="#" class="red">
+                                                          <i class="ace-icon fa fa-times bigger-125"></i>
+                                                      </a>
+                                                      </div>
+                                                    
+                                                    </div>
+                                                    
+                                                 
+                                                   <div class="pull-left col-lg-10 lui-shb-oh "> <span class="col-md-10 lui-pd0"> <i class="ace-icon fa fa-circle  small">&nbsp;&nbsp;&nbsp;&nbsp;</i><h10>2015/1/26&nbsp;&nbsp;</h10>我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱</span>
+                                                    <div class="tools action-buttons col-md-2 pull-right text-right lui-pd0 lui-sjb-ycan">
+                                                      <a href="#" class="blue">
+                                                       <i class="ace-icon fa fa-pencil bigger-125"></i>
+                                                      </a>
+
+                                                     <a href="#" class="red">
+                                                          <i class="ace-icon fa fa-times bigger-125"></i>
+                                                      </a>
+                                                      </div>
+                                                    
+                                                    </div>
+                                                 
+                                                
+                                                
+                                                    <div class="pull-left col-lg-10 lui-shb-oh "> <span class="col-md-10 lui-pd0"> <i class="ace-icon fa fa-circle  small">&nbsp;&nbsp;&nbsp;&nbsp;</i><h10>2015/1/26&nbsp;&nbsp;</h10>我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱</span>
+                                                    <div class="tools action-buttons col-md-2 pull-right text-right lui-pd0 lui-sjb-ycan">
+                                                      <a href="#" class="blue">
+                                                       <i class="ace-icon fa fa-pencil bigger-125"></i>
+                                                      </a>
+
+                                                     <a href="#" class="red">
+                                                          <i class="ace-icon fa fa-times bigger-125"></i>
+                                                      </a>
+                                                      </div>
+                                                    
+                                                    </div>
+                                                   
+                                                    <div class="space-6"></div>
+                                                    </div>
+                                                 
+                                                  </div>
+
+                                                </div>
+                                          
+                                            				   
+                                          <div class="col-md-2" style="height:auto;padding:0;margin-top:15px;">
+                                              <div class="col-md-12 col-xs-12 lui-sjb-ztjc" style="padding:5px 12px 5px 12px;float:left"> <i class="ace-icon fa fa-thumb-tack lui-sjb-hsxx blue bigger-140"></i> 可采取动作 </div>
+                                              <div class="col-md-12 col-xs-6 lui-sjb-butk" style="margin-top:20px;">
+                                                <div class="center col-md-6 col-xs-6 lui-sjb-butk-l" >
+                                                  <button class="btn btn-app btn-danger btn-xs "> <i class="ace-icon fa fa-pencil-square-o  bigger-180"></i> 部门同意 <span class="badge lui-sjb-htitle"><i class="ace-icon fa fa-check"></i></span></button>
+                                                </div>
+                                                <div class="center col-md-6 col-xs-6">
+                                                  <button class="btn btn-app btn-info btn-xs"> <i class="ace-icon fa fa-envelope bigger-180"></i> 处理意见 <span class="badge lui-sjb-htitle"><i class="ace-icon fa fa-check"></i></span></button>
+                                                </div>
+                                              </div>
+
+                                              <div class="col-md-12 col-xs-6 lui-sjb-butk" style="margin-top:20px;padding-bottom:10px;">
+                                                <div class="center col-md-6 col-xs-6 lui-sjb-butk-l" >
+                                                  <button class="btn btn-app btn-info btn-xs"> <i class="ace-icon fa fa-list  bigger-180"></i> 沟通交流 <span class="badge lui-sjb-htitle"><i class="ace-icon fa fa-check"></i></span></button>
+                                                </div>
+                                                <div class=" center col-md-6 col-xs-6">
+                                                  <button class="btn btn-app btn-info btn-xs"> <i class="ace-icon fa fa-inbox  bigger-180"></i> 总经理同意 <span class="badge lui-sjb-htitle"><i class="ace-icon fa fa-check"></i></span></button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                      
+
+ 
+																	<div class="widget-toolbox clearfix">
+																		
+
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="timeline-item clearfix">
+														
+														
+														<div class="timeline-info">
+															<i class="timeline-indicator ace-icon fa fa-clipboard no-hover"></i>
+															<span class="label  label-sm fense">价格谈判</span>
+														</div>
+
+														<div class="widget-box transparent">
+															<div class="widget-header widget-header-small">
+																<h5 class="widget-title smaller">
+																	
+																	<span class="" style="font-size:16px;font-weight:bold;">价格谈判</span>
+																</h5>
+
+
+																<span class="widget-toolbar">
+																	<a href="#" data-action="reload">
+																		<i class="ace-icon fa fa-refresh"></i>
+																	</a>
+
+																	<a  href="#faq-1-4" data-parent="#faq-list-1" data-toggle="collapse" >
+																		<i class="ace-icon fa fa-chevron-down pull-right"   data-icon-hide="ace-icon fa fa-chevron-up" data-icon-show="ace-icon fa fa-chevron-down"></i>
+																	</a>
+																</span>
+															</div>
+
+															<div class="widget-body panel-collapse collapse" id="faq-1-4">
+																<div class="widget-main lui-pd0">
+																	
+												<div class="col-md-10 lui-pd0" style="float:left;padding-bottom:15px;">
+                                             
+                                                  <div class="widget-toolbox clearfix">
+                                                    <div class="col-lg-12 lui-sjb-lh"  style=" padding-bottom:10px;padding-right:0; ">
+                                                    
+                                                   
+                                                      <div class="col-lg-12 lui-sjb-ml">
+                                                      
+                                                        <div class="col-lg-6   "><span  style="color:#609ED1">机会星级：</span> <span><i class="ace-icon fa fa-star"></i><i class="ace-icon fa fa-star"></i><i class="ace-icon fa fa-star"></i><i class="ace-icon fa fa-star-o"></i><i class="ace-icon fa fa-star-o"></i></span> </div>
+                                                        <div class="col-lg-6">  <span class="lui-sjb-ml2" style="">阶段状态：</span> <span style="display: inline;" class="editable editable-click" id="username">已完成</span> </div>
+
+                                                        <div class="col-lg-6">  <span  style="color:#609ED1">联&nbsp;&nbsp;系&nbsp;&nbsp;人：</span> <a>0532-xxxx-xxxx</a>&nbsp;&nbsp;&nbsp;&nbsp;<i class="ace-icon fa fa-plus bigger-130"></i> </div>
+                                                        <div class="col-lg-6"> <span class="lui-sjb-ml2" style="">销售报价：</span> <span>10000</span><span>&nbsp;&nbsp;&nbsp;&nbsp;<a>查看报价单<a/></span> </div>
+                                                        <div class="col-lg-6"> <span  style="color:#609ED1">开始时间：</span> <span>2015/1/20 8:30</span> </div>
+                                                        <div class="col-lg-6"> <span class="lui-sjb-ml2" style="">结束时间：</span> <span>2015/1/26 16:50</span> </div>
+														<div class="col-lg-12">  <span  style="color:#609ED1">相关附件：</span> <span><a>报价单.xls<a/></span> </div>
+                                                      </div>
+                                                      <!--col-lg-12  end-->
+                                                      <div class="col-lg-12"  style="margin-left:-25px;padding-right:0;">
+                                                        <div class="col-lg-12" style="padding-right:0;"> <span  style="color:#609ED1">备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注：</span> <span>相关信息展示信息</span> </div>
+                                                      </div>
+                                                      <!-- col-lg-12  end--> 
+                                                      
+                                                    </div>
+                                                    <!--   名称  end-->
+                                                     <div class="col-md-12 col-xs-12 lui-pd0">
+                                                     	<div class="pull-left col-lg-10 col-xs-11 lui-sjb-xgxd">
+                                                        <i class="ace-icon fa fa-check-square-o "></i>
+                                                     		<span>相关行动</span>
+                                                     		<a href="" class="blue pull-right lui-sjb-more">更多</a><a href="#" class="blue pull-right"> <i class="ace-icon fa fa-plus bigger-130"></i> &nbsp;&nbsp;&nbsp;</a>
+                                                     	</div>
+                                                  <div class="pull-left col-lg-10 lui-shb-oh "> <span class="col-md-10 lui-pd0"> <i class="ace-icon fa fa-circle  small">&nbsp;&nbsp;&nbsp;&nbsp;</i><h10>2015/1/26&nbsp;&nbsp;</h10>我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱</span>
+                                                    <div class="tools action-buttons col-md-2 pull-right text-right lui-pd0 lui-sjb-ycan">
+                                                      <a href="#" class="blue">
+                                                       <i class="ace-icon fa fa-pencil bigger-125"></i>
+                                                      </a>
+
+                                                     <a href="#" class="red">
+                                                          <i class="ace-icon fa fa-times bigger-125"></i>
+                                                      </a>
+                                                      </div>
+                                                    
+                                                    </div>
+                                                    
+                                                 
+                                                   <div class="pull-left col-lg-10 lui-shb-oh "> <span class="col-md-10 lui-pd0"> <i class="ace-icon fa fa-circle  small">&nbsp;&nbsp;&nbsp;&nbsp;</i><h10>2015/1/26&nbsp;&nbsp;</h10>我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱</span>
+                                                    <div class="tools action-buttons col-md-2 pull-right text-right lui-pd0 lui-sjb-ycan">
+                                                      <a href="#" class="blue">
+                                                       <i class="ace-icon fa fa-pencil bigger-125"></i>
+                                                      </a>
+
+                                                     <a href="#" class="red">
+                                                          <i class="ace-icon fa fa-times bigger-125"></i>
+                                                      </a>
+                                                      </div>
+                                                    
+                                                    </div>
+                                                 
+                                                
+                                                
+                                                    <div class="pull-left col-lg-10 lui-shb-oh "> <span class="col-md-10 lui-pd0"> <i class="ace-icon fa fa-circle  small">&nbsp;&nbsp;&nbsp;&nbsp;</i><h10>2015/1/26&nbsp;&nbsp;</h10>我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱</span>
+                                                    <div class="tools action-buttons col-md-2 pull-right text-right lui-pd0 lui-sjb-ycan">
+                                                      <a href="#" class="blue">
+                                                       <i class="ace-icon fa fa-pencil bigger-125"></i>
+                                                      </a>
+
+                                                     <a href="#" class="red">
+                                                          <i class="ace-icon fa fa-times bigger-125"></i>
+                                                      </a>
+                                                      </div>
+                                                    
+                                                    </div>
+                                                   
+                                                    <div class="space-6"></div>
+                                                    </div>
+                                                 
+                                                  </div>
+
+                                                </div>
+                                          
+                                            				   
+                                          <div class="col-md-2" style="height:auto;padding:0;margin-top:15px;">
+                                              <div class="col-md-12 col-xs-12 lui-sjb-ztjc" style="padding:5px 12px 5px 12px;float:left"> <i class="ace-icon fa fa-thumb-tack lui-sjb-hsxx blue bigger-140"></i> 可采取动作 </div>
+                                              <div class="col-md-12 col-xs-6 lui-sjb-butk" style="margin-top:20px;">
+                                                <div class="center col-md-6 col-xs-6 lui-sjb-butk-l" >
+                                                  <button class="btn btn-app btn-danger btn-xs "> <i class="ace-icon fa fa-pencil-square-o  bigger-180"></i> 法务审核 <span class="badge lui-sjb-htitle"><i class="ace-icon fa fa-check"></i></span></button>
+                                                </div>
+                                                <div class="center col-md-6 col-xs-6">
+                                                  <button class="btn btn-app btn-info btn-xs"> <i class="ace-icon fa fa-envelope bigger-180"></i> 获取资料 <span class="badge lui-sjb-htitle"><i class="ace-icon fa fa-check"></i></span></button>
+                                                </div>
+                                              </div>
+
+                                              <div class="col-md-12 col-xs-6 lui-sjb-butk" style="margin-top:20px;padding-bottom:10px;">
+                                                <div class="center col-md-6 col-xs-6 lui-sjb-butk-l" >
+                                                  <button class="btn btn-app btn-info btn-xs"> <i class="ace-icon fa fa-list  bigger-180"></i> 客户来访 <span class="badge lui-sjb-htitle"><i class="ace-icon fa fa-check"></i></span></button>
+                                                </div>
+                                                <div class=" center col-md-6 col-xs-6">
+                                                  <button class="btn btn-app btn-info btn-xs"> <i class="ace-icon fa fa-inbox  bigger-180"></i> 处理意见 <span class="badge lui-sjb-htitle"><i class="ace-icon fa fa-check"></i></span></button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                      
+
+ 
+																	<div class="widget-toolbox clearfix">
+																		
+
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													
+													
+													<div class="timeline-item clearfix">
+														
+														
+														<div class="timeline-info">
+															<i class="timeline-indicator ace-icon fa fa-file-text  no-hover"></i>
+															<span class="label  label-sm hongse">签订合同</span>
+														</div>
+
+														<div class="widget-box transparent">
+															<div class="widget-header widget-header-small">
+																<h5 class="widget-title smaller">
+																	
+																	<span class="" style="font-size:16px;font-weight:bold;">签订合同</span>
+																</h5>
+
+
+																<span class="widget-toolbar">
+																	<a href="#" data-action="reload">
+																		<i class="ace-icon fa fa-refresh"></i>
+																	</a>
+
+																	<a  href="#faq-1-5" data-parent="#faq-list-1" data-toggle="collapse" >
+                                    <i class="ace-icon fa fa-chevron-down pull-right"   data-icon-hide="ace-icon fa fa-chevron-up" data-icon-show="ace-icon fa fa-chevron-down"></i>
+																		
+																	</a>
+																</span>
+															</div>
+
+															<div class="widget-body panel-collapse collapse" id="faq-1-5">
+																<div class="widget-main lui-pd0">
+																	
+												<div class="col-md-10 lui-pd0" style="float:left;padding-bottom:15px;">
+                                             
+                                                  <div class="widget-toolbox clearfix">
+                                                    <div class="col-lg-12 lui-sjb-lh"  style=" padding-bottom:10px;padding-right:0; ">
+                                                    
+                                                   
+                                                      <div class="col-lg-12 lui-sjb-ml">
+                                                      
+                                                        <div class="col-lg-6   "><span  style="color:#609ED1">机会星级：</span> <span><i class="ace-icon fa fa-star"></i><i class="ace-icon fa fa-star"></i><i class="ace-icon fa fa-star"></i><i class="ace-icon fa fa-star-o"></i><i class="ace-icon fa fa-star-o"></i></span> </div>
+                                                        <div class="col-lg-6">  <span class="lui-sjb-ml2" style="">阶段状态：</span> <span style="display: inline;" class="editable editable-click" id="username">已完成</span> </div>
+
+                                                        <div class="col-lg-6">  <span  style="color:#609ED1">联&nbsp;&nbsp;系&nbsp;&nbsp;人：</span> <a>0532-xxxx-xxxx</a>&nbsp;&nbsp;&nbsp;&nbsp;<i class="ace-icon fa fa-plus bigger-130"></i> </div>
+                                                        <div class="col-lg-6"> <span class="lui-sjb-ml2" style="">合同金额：</span> <span>10000</span> </div>
+                                                        <div class="col-lg-6"> <span  style="color:#609ED1">开始时间：</span> <span>2015/1/20 8:30</span> </div>
+                                                        <div class="col-lg-6"> <span class="lui-sjb-ml2" style="">结束时间：</span> <span>2015/1/26 16:50</span> </div>
+														<div class="col-lg-12">   <span  style="color:#609ED1">相关附件：</span> <span><a>合同.docs<a/></span> </div>
+                                                      </div>
+                                                      <!--col-lg-12  end-->
+                                                      <div class="col-lg-12"  style="margin-left:-25px;padding-right:0;">
+                                                        <div class="col-lg-12" style="padding-right:0;"> <span  style="color:#609ED1">备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注：</span> <span>相关信息展示信息</span> </div>
+                                                      </div>
+                                                      <!-- col-lg-12  end--> 
+                                                      
+                                                    </div>
+                                                    <!--   名称  end-->
+                                                     <div class="col-md-12 col-xs-12 lui-pd0">
+                                                     	<div class="pull-left col-lg-10 col-xs-11 lui-sjb-xgxd">
+                                                        <i class="ace-icon fa fa-check-square-o "></i>
+                                                     		<span>相关行动</span>
+                                                     		<a href="" class="blue pull-right lui-sjb-more">更多</a><a href="#" class="blue pull-right"> <i class="ace-icon fa fa-plus bigger-130"></i> &nbsp;&nbsp;&nbsp;</a>
+                                                     	</div>
+                                                  <div class="pull-left col-lg-10 lui-shb-oh "> <span class="col-md-10 lui-pd0"> <i class="ace-icon fa fa-circle  small">&nbsp;&nbsp;&nbsp;&nbsp;</i><h10>2015/1/26&nbsp;&nbsp;</h10>我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱</span>
+                                                    <div class="tools action-buttons col-md-2 pull-right text-right lui-pd0 lui-sjb-ycan">
+                                                      <a href="#" class="blue">
+                                                       <i class="ace-icon fa fa-pencil bigger-125"></i>
+                                                      </a>
+
+                                                     <a href="#" class="red">
+                                                          <i class="ace-icon fa fa-times bigger-125"></i>
+                                                      </a>
+                                                      </div>
+                                                    
+                                                    </div>
+                                                    
+                                                 
+                                                   <div class="pull-left col-lg-10 lui-shb-oh "> <span class="col-md-10 lui-pd0"> <i class="ace-icon fa fa-circle  small">&nbsp;&nbsp;&nbsp;&nbsp;</i><h10>2015/1/26&nbsp;&nbsp;</h10>我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱</span>
+                                                    <div class="tools action-buttons col-md-2 pull-right text-right lui-pd0 lui-sjb-ycan">
+                                                      <a href="#" class="blue">
+                                                       <i class="ace-icon fa fa-pencil bigger-125"></i>
+                                                      </a>
+
+                                                     <a href="#" class="red">
+                                                          <i class="ace-icon fa fa-times bigger-125"></i>
+                                                      </a>
+                                                      </div>
+                                                    
+                                                    </div>
+                                                 
+                                                
+                                                
+                                                    <div class="pull-left col-lg-10 lui-shb-oh "> <span class="col-md-10 lui-pd0"> <i class="ace-icon fa fa-circle  small">&nbsp;&nbsp;&nbsp;&nbsp;</i><h10>2015/1/26&nbsp;&nbsp;</h10>我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱我在马路边捡到一分钱</span>
+                                                    <div class="tools action-buttons col-md-2 pull-right text-right lui-pd0 lui-sjb-ycan">
+                                                      <a href="#" class="blue">
+                                                       <i class="ace-icon fa fa-pencil bigger-125"></i>
+                                                      </a>
+
+                                                     <a href="#" class="red">
+                                                          <i class="ace-icon fa fa-times bigger-125"></i>
+                                                      </a>
+                                                      </div>
+                                                    
+                                                    </div>
+                                                   
+                                                    <div class="space-6"></div>
+                                                    </div>
+                                                 
+                                                  </div>
+
+                                                </div>
+                                          
+                                            				   
+                                          <div class="col-md-2" style="height:auto;padding:0;margin-top:15px;">
+                                              <div class="col-md-12 col-xs-12 lui-sjb-ztjc" style="padding:5px 12px 5px 12px;float:left"> <i class="ace-icon fa fa-thumb-tack lui-sjb-hsxx blue bigger-140"></i> 可采取动作 </div>
+                                              <div class="col-md-12 col-xs-6 lui-sjb-butk" style="margin-top:20px;">
+                                                <div class="center col-md-6 col-xs-6 lui-sjb-butk-l" >
+                                                  <button class="btn btn-app btn-danger btn-xs "> <i class="ace-icon fa fa-pencil-square-o  bigger-180"></i> 拜访客户 <span class="badge lui-sjb-htitle"><i class="ace-icon fa fa-check"></i></span></button>
+                                                </div>
+                                                <div class="center col-md-6 col-xs-6">
+                                                  <button class="btn btn-app btn-info btn-xs"> <i class="ace-icon fa fa-envelope bigger-180"></i> 处理意见 <span class="badge lui-sjb-htitle"><i class="ace-icon fa fa-check"></i></span></button>
+                                                </div>
+                                              </div>
+
+                                              <div class="col-md-12 col-xs-6 lui-sjb-butk" style="margin-top:20px;padding-bottom:10px;">
+                                                <div class="center col-md-6 col-xs-6 lui-sjb-butk-l" >
+                                                  <button class="btn btn-app btn-info btn-xs"> <i class="ace-icon fa fa-list  bigger-180"></i> 沟通交流 <span class="badge lui-sjb-htitle"><i class="ace-icon fa fa-check"></i></span></button>
+                                                </div>
+                                                <div class=" center col-md-6 col-xs-6">
+                                                  <button class="btn btn-app btn-info btn-xs"> <i class="ace-icon fa fa-inbox  bigger-180"></i> 资料处理 <span class="badge lui-sjb-htitle"><i class="ace-icon fa fa-check"></i></span></button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                      
+
+ 
+																	<div class="widget-toolbox clearfix">
+																		
+
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+											</div><!-- /.timeline-container -->
+                            </div>
+                            <!-- /.widget-main -->
+                        </div>
+                        <!-- /.widget-body -->
+                    </div>
+                    <!-- /.widget-box -->
+                    <!-- 我的活动市场  end-->
+                </div>
+				
+        </div>
+      </div>
+
+  
+
+<!-- 
+      <div class="clearfix form-actions">
+        <div class=" col-md-12 col-xs-12 ">
+          <div class=" col-xs-6">
+            <button class="btn btn-sm btn-success" type="button" style="float:right;"> <i class="ace-icon fa fa-check "></i> 保存 </button>
+          </div>
+          <div class="col-xs-offset-0 col-xs-6">
+            <button class="btn btn-sm btn-purple" type="reset"> <i class="ace-icon fa fa-undo "></i> 重置 </button>
+          </div>
+        </div>
+      </div>--> 
+    </form>
+  </div>
+  <!-- /.span --> 
+  
+</div><!-- /.row --> 
+
+												</div>
+
+												<div id="profile3" class="tab-pane">
+													<div class="row">
+	<div class="col-xs-12">
+		<!-- PAGE CONTENT BEGINS -->
+
+
+								<table id="grid-table"></table>
+
+								<div id="grid-pager"></div>
+
+								<script type="text/javascript">
+									var $path_base = ".";//in Ace demo this will be us
+								</script>
+
+		<!-- PAGE CONTENT ENDS -->
+	</div><!-- /.col -->
+</div><!-- /.row -->
+												</div>
+ 
+											</div>
+										</div>
+										</div></div>
+													
+												</div>
+											</div>
+										</div>
+</div><!-- /.row -->
+
+<!-- page specific plugin scripts -->
+<script type="text/javascript">
+	var scripts = [null,"../LingUI/js/prettify.js", "../LingUI/js/lui.jiantingdiv.js","../LingUI/js/jqGrid/jquery.jqGrid.min.js","../LingUI/js/jqGrid/i18n/grid.locale-cn.js",null]
+	ace.load_ajax_scripts(scripts, function() {
+	var grid_selector = "#grid-table3";
+	var pager_selector = "#grid-pager3";
+	var grid_data = [
+				{id:"1",prodName:"ERP",unitId:"套",listPrice:"内部价格表",prodQuantity:"1", finalPrice:"100",prodAmount:"1000",note:"2"},
+				{id:"12",prodName:"ERP",unitId:"套",listPrice:"内部价格表",prodQuantity:"1", finalPrice:"100",prodAmount:"1000",note:"2"},
+				{id:"3"},
+				{id:"4"},
+				{id:"5"}
+				];
+				//resize to fit page size     调整以适应页面大小
+				$(window).on('resize.jqGrid', function () {
+					$(grid_selector).jqGrid( 'setGridWidth', $(".page-content").width());
+			    });
+				
+	jQuery(grid_selector).jqGrid({
+					//direction: "rtl",
+		
+					//for this example we are using local data  这个例子使用本地文件				
+					data: grid_data,
+					datatype: "local",
+					height: "100%",
+					colNames:['', '产品', '计量单位', '价格表价格','产品数量','报价','金额','备注'],
+					colModel:[
+						{name:'id',index:'id', width:180,  editable: true,hidden:true},
+						{name:'prodName',index:'prodName', width:120,editable: true},
+						{name:'unitId',index:'unitId', width:80, editable: true},
+						{name:'listPrice',index:'listPrice', width:80, editable: true},
+						{name:'prodQuantity',index:'prodQuantity', width:70, editable: true} ,
+						{name:'finalPrice',index:'finalPrice', width:80, editable: true},
+						{name:'prodAmount',index:'prodAmount', width:70, editable: true},
+						{name:'note',index:'note',width:70, editable:true}
+					], 
+					rownumbers:true,
+					viewrecords : false,
+					pagerpos:'right',
+					pgtext:"当前{0}页，共{1}页",
+					rowNum:10,
+					rowList:[10,20,30],
+					pager : pager_selector,   
+					altRows: true,
+					//toppager: true,   
+					
+					//multiselect: true,
+					//multikey: "ctrlKey",
+			        //multiboxonly: true,
+			
+					loadComplete : function() {
+						var table = this;
+						setTimeout(function(){						
+							//updatePagerIcons(table);
+							//enableTooltips(table);
+						}, 0);
+					},
+			
+					editurl: "/dummy.html",//nothing is saved
+					//caption: "发票详情"
+			
+					//,autowidth: true,
+					cellEdit:false,
+					cellsubmit:'clientArray',
+					//单元格编辑ajax提交的路径
+					//cellurl:"admin_list.html",
+					/**
+					,
+					grouping:true, 
+					groupingView : { 
+						 groupField : ['name'],
+						 groupDataSorted : true,
+						 plusicon : 'fa fa-chevron-down bigger-110',
+						 minusicon : 'fa fa-chevron-up bigger-110'
+					},
+					caption: "Grouping"
+					*/
+					 onCellSelect: function(rowid,iCol){  
+					 url="product_list.html"
+					 if(iCol==3){
+					 openwindow(url)
+					 }
+    			  	   rowidT = rowid;
+					   iColT = iCol;
+  					},  
+				});
+		$(window).triggerHandler('resize.jqGrid');
+		$(grid_selector).closest(".ui-jqgrid-bdiv").css({ "overflow-x" : "hidden" });
+	  //inline scripts related to this page
+		 jQuery(function($) {
+	
+		window.prettyPrint && prettyPrint();
+		$('#id-check-horizontal').removeAttr('checked').on('click', function(){
+			$('#dt-list-1').toggleClass('dl-horizontal').prev().html(this.checked ? '&lt;dl class="dl-horizontal"&gt;' : '&lt;dl&gt;');
+		});
+		
+		
+		
+		
+		
+       bh=$("#myTab3").height();
+			ah=$("#liuchengkuang").height();
+			ch=ah-bh;
+			$("#myTab3").css("padding-bottom",ch+32);
+			
+       $("#liuchengkuang").resize(function()
+	   {
+
+		     bh=$("#myTab3").height();
+			ah=$("#liuchengkuang").height();
+		 if(ah>bh){
+			ch=ah-bh;
+			$("#myTab3").css("padding-bottom",ch+32);
+			}else{
+			$("#myTab3").css("padding-bottom",0);}
+       })
+		
+			
+
+	
+	})
+	});
+	
+
+
+
+</script>
+<div class="modal fade" id="myModal11" tabindex="-1" role="dialog"  aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+	  <div class="row">
+			<div class="col-xs-12">
+				<div class="space-4"></div>
+					<h3 class="header smaller lighter blue">请选择跳转的阶段</h3>
+
+					<div class="form-group">
+						<label class="col-sm-1 col-xs-12 control-label no-padding-right"
+							for="oweruserid"> 阶段: </label>
+						<div class="col-sm-6 col-xs-12">
+							<select class=" col-sm-6 " id="oweruserid" name="oweruserid">
+								<option value="saf">机会识别</option>
+								<option value="GLY">需求分析</option>
+								<option value="DJJ">方案谈判</option>
+								<option value="FXW">价格谈判</option>
+								<option value="GYJ">合同签订</option>
+							</select>
+						</div>
+					</div>
+			</div>
+	  </div>
+	  
+         <div class="modal-footer" style="text-align:center;">
+            <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">关闭
+            </button>
+              <button type="button" class="btn btn-primary btn-sm"  data-dismiss="modal" onclick="saveMap()" >
+               确定
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+</div><!-- /.modal -->
+</div>
+
+    <div id="dialog-message" class="hide ">
+      <div class="dialogs">
+        <span style="white-space:pre-wrap;word-wrap : break-word ;">
+     人民网2月5日电 海外网“学习小组”公众号关注“习近平剑指官场4种灰色心态”，文章称，在最近的省部级干部研讨班上，习近平首次在公开场合谈了“四个全面”的治国理政布局。其中，“全面从严治党”是一个新提法、新思路。要理解这一思路，“政治规矩”是一个必不可少的关键词。
+
+之前，人民日报海外版刊发的《中共的政治规矩是什么》，已经厘清了政治规矩的概念、内涵，反响热烈。明天，他们将用一个整版，刊发题为《政治规矩打破官场灰色心态》的文章，并授权小组提前发布。
+
+这篇文章提出，官场上的四种“灰色心态”，是习近平提出政治规矩的现实背景。政治规矩的提法，既是剑指这四种心态，也意在打破这些心态。
+
+文章长，但读下来必有裨益，推荐给各位组员学习。另，文章中的表述，以明天人民日报海外版的见报版本为准。
+
+政治规矩打破官场灰色心态
+
+1月29日，本报刊发《中共的政治规矩是什么》一文（小组注：回复“规矩”可见），引发读者热议。对于“政治规矩”这一理解中国当下政治思路的关键词，不仅需要厘清概念，同时要理解为何立政治规矩、如何执行政治规矩。
+
+在我们看来，讲政治规矩，就是要打破长期以来官场存在的一些“灰色心态”。这些心态，有的已经被十八大以来的党风廉政建设和反腐败斗争所震慑、所涤荡，有些目前依然在官场上存在。
+
+换句话说，讲政治规矩，事关“破”，也事关“立”。破除积弊、立下新规，“明制度于前，重威刑于后”。
+
+1 对反腐性质认识的灰色心态
+
+十八届中央纪委五次全会上，对于反腐的态势，习近平下了“依然严峻复杂”的判断。这场“输不起的斗争”，注定是一场攻坚战、持久战。
+
+这着实打破了一些人此前的“观望”心态。这种心态，通俗地说，就是认为“反腐败是刮一阵风，搞一段时间就会过去”，大不了“现在打枪，暂且低头”。
+
+但十八大以来的反腐风暴的持续之久、力度之大，已经给予了这种心态以事实上的打击。十八大以来，以周永康、徐才厚、令计划、苏荣等“大老虎”的倒掉为标志，对高级干部的查处力度称得上“前所未有”。仅2014年，中央就立案查处了54名中管干部。同时“老虎、苍蝇一起打”的原则下，即使是“蝇头小吏”，只要违纪违法，也逃不过高压的反腐态势。
+
+那么，反腐败的力度如此之大，是不是会损害党和政府的形象？是不是如一些人说的那样，“不反腐亡国、真反腐亡党”？
+
+当然不是。习近平在多个场合论述道，不反腐确实有亡党的危险，真反腐才能净化党的肌体，才能真正兴党兴国。至于查处了多少高级干部、和以往相比力度加大了多少，习近平也说，“不要算这个账，有贪必反，有腐必惩”，“不定指标、上不封顶，凡腐必反，除恶务尽”。
+
+之所以有观望的灰色心态，说到底，还是因为对反腐败斗争性质的认识出了偏差，低估了中央对反腐的决心和态度。
+
+反腐败是一件“得罪人”的事情。但如果不得罪成百上千的腐败分子，就要得罪13亿人民。这是一笔再明白不过的“政治账”、也是一笔人心向背的账。之所以对腐败采取零容忍的态度，说到底，就是为了赢得党心民心。
+
+还有一些人，将反腐认为是“政治斗争”、“排除异己的工具”，这种心态就更加错误甚至是荒谬了。无论是已经被公诉的官员，还是一些落马贪官的写的“忏悔录”，都已经明白无疑地交代了违法乱纪的事实，铁证如山，不容置喙。
+
+也就是说，反腐从来不是什么“个人恩怨”。正因此，我们才说，无论是谁，无论担任过什么职务，只要违反党纪国法，都绝不姑息。在反腐问题上，没有谁能当“铁帽子王”。111111
+        </span>
+
+      </div>
+
+</div><!-- #dialog-message -->
+    <!-- page specific plugin scripts -->
+    <script src="LingUI/js/jquery-ui.min.js"></script>
+
+
+
+
+
+<script type="text/javascript">
+var scripts = [null,"LingUI/js/date-time/bootstrap-datepicker.min.js","LingUI/js/jqGrid/jquery.jqGrid.min.js","LingUI/js/jqGrid/i18n/grid.locale-en.js", null]
+  ace.load_ajax_scripts(scripts, function() {
+      jQuery(function($) {
+
+
+        $('.dialogs,.comments').ace_scroll({
+          size: 400
+          });
+        
+
+        var agent = navigator.userAgent.toLowerCase();
+        if("ontouchstart" in document && /applewebkit/.test(agent) && /android/.test(agent))
+          $('#tasks').on('touchstart', function(e){
+          var li = $(e.target).closest('#tasks li');
+          if(li.length == 0)return;
+          var label = li.find('label.inline').get(0);
+          if(label == e.target || $.contains(label, e.target)) e.stopImmediatePropagation() ;
+        });
+
+        //override dialog's title function to allow for HTML titles
+        $.widget("ui.dialog", $.extend({}, $.ui.dialog.prototype, {
+          _title: function(title) {
+            var $title = this.options.title || '&nbsp;'
+            if( ("title_html" in this.options) && this.options.title_html == true )
+              title.html($title);
+            else title.text($title);
+          }
+        }));
+      
+        $( "#id-btn-dialog1" ).on('click', function(e) {
+          e.preventDefault();
+      
+          var dialog = $( "#dialog-message" ).removeClass('hide').dialog({
+            resizable: false,
+            modal: true,
+            title: "<div class='widget-header widget-header-small'><h4 class='smaller'><i class='ace-icon fa fa-check'></i> 添加页</h4></div>",
+            title_html: true,
+            width:700,
+            height:500,
+            buttons: [ 
+              {
+                text: "取消",
+                "class" : "btn btn-xs",
+                click: function() {
+                  $( this ).dialog( "close" ); 
+                } 
+              },
+              {
+                text: "确定",
+                "class" : "btn btn-primary btn-xs",
+                click: function() {
+                  $( this ).dialog( "close" ); 
+                } 
+              }
+            ]
+          });
+      
+        
+        });
+      
+      });
+ })
+    </script>

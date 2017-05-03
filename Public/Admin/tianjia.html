@@ -1,0 +1,427 @@
+<title>User Profile Page - Ace Admin</title>
+<style>
+label{font-size: 13px;}
+h4.smaller{font-size:15px;}
+.form-contrl{font-size: 13px;}
+.form-actions {
+    display: block;
+    background-color: #F5F5F5;
+    border-top: 1px solid #E5E5E5;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 19px 20px 10px;
+}
+
+</style>
+<form class="form-horizontal lui-tj-bd" id="validation-form" method="get">
+<div class="row">
+  <div class="col-xs-12">
+    <form class="form-horizontal">
+      <div class="tabbable">
+        <h4 class="header blue bolder smaller">客户基本信息<a href="#faq-1-2" data-parent="#faq-list-1" data-toggle="collapse"> <i class="ace-icon fa fa-chevron-up pull-right"   data-icon-hide="ace-icon fa fa-chevron-up" data-icon-show="ace-icon fa fa-chevron-down"></i></a> <!--Social --></h4>
+        <div class="row panel-collapse collapse in"  id="faq-1-2">
+
+          <div class="col-xs-12 col-sm-6">
+            <div class="form-group">
+              <label class="col-sm-3 control-label no-padding-right" for="form-field-username">客户名称</label>
+              <div class="col-sm-9">
+                <div class="input-group col-sm-9">
+                      <input class="form-control date-picker" id="id-date-picker-1" data-date-format="dd-mm-yyyy" type="text">
+                      <span class="input-group-addon">
+                        <i class="fa fa-calendar bigger-110"></i>
+                      </span>
+                    </div>
+               <!-- <input class="col-xs-12 col-sm-9" type="text" id="form-field-username" /*placeholder="Username"*/ />-->
+              </div>
+            </div>
+            <div class="space-4"></div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label no-padding-right" for="form-field-first">电话</label>
+              <div class="col-sm-9 col-xs-12 lui-tj-iconwarn">
+               <div class="input-group col-xs-12 col-sm-9 ">
+                  <input type="tel" name="phone" id="phone" class="col-xs-12 col-sm-12" />
+                  <span class="input-group-addon">
+                  <i class="ace-icon fa fa-phone"></i>
+                  </span>
+               </div>
+
+              </div>
+            </div>
+
+            
+          </div>
+          <div class="vspace-12-sm"></div>
+          <div class="col-xs-12 col-sm-6">
+            <div class="form-group">
+              <label class="col-sm-3 control-label no-padding-right" for="form-field-username">所在区域</label>
+             <div class="col-sm-9">
+       
+                <select class="col-md-9 col-xs-12 form-control" id="form-field-select-1" >
+                  <option value="">--请选择--</option>
+                  <option value="AL">阿拉巴马</option>
+                  <option value="AK">阿拉斯加</option>
+                  <option value="AZ">亚利桑那</option>
+                </select>
+        
+            </div>
+            </div>
+          
+          </div>
+          <div class="col-xs-12 col-sm-12"></div>
+          <div class="col-xs-12 col-sm-6">
+            <div class="form-group">
+              <label class="col-sm-3 control-label no-padding-right" for="form-field-username">地址</label>
+              <div class="col-sm-9 col-xs-12 lui-tj-iconwarn">
+               <div class="input-group col-xs-12 col-sm-9 ">
+                  <input type="tel" name="phone" id="phone" class="col-xs-12 col-sm-12" />
+                  <span class="input-group-addon">
+                  <i class="ace-icon fa fa-building-o"></i>
+                  </span>
+               </div>
+
+              </div>
+            </div>
+            <div class="space-4"></div>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="header blue bolder smaller accordion-toggle collapsed">关联用户信息<a href="#faq-1-1" data-parent="#faq-list-1" data-toggle="collapse"> <i class="ace-icon fa fa-chevron-up pull-right"   data-icon-hide="ace-icon fa fa-chevron-up" data-icon-show="ace-icon fa fa-chevron-down"></i></a><!--Social --></h4>
+
+      <div class="row panel-collapse collapse in"  id="faq-1-1">
+        <div class="col-xs-12 col-sm-6">
+          <div class="form-group">
+            <label class="col-sm-3 control-label no-padding-right" for="form-field-username">所有者</label>
+            <div class="col-sm-9">
+       
+                <select class="col-md-9 col-xs-12 form-control" id="form-field-select-1" >
+                  <option value="">--请选择--</option>
+                  <option value="AL">阿拉巴马</option>
+                  <option value="AK">阿拉斯加</option>
+                  <option value="AZ">亚利桑那</option>
+                </select>
+        
+            </div>
+          </div>
+        </div>
+        <div class="vspace-12-sm"></div>
+      </div>
+      <h4 class="header blue bolder smaller">个人详细信息<a href="#faq-1-3" data-parent="#faq-list-1" data-toggle="collapse"> <i class="ace-icon fa fa-chevron-up pull-right"   data-icon-hide="ace-icon fa fa-chevron-up" data-icon-show="ace-icon fa fa-chevron-down"></i></a> </h4>
+      <div class="row panel-collapse collapse in"  id="faq-1-3">
+        <div class="col-xs-12 col-sm-6">
+          <div class="form-group">
+            <label class="col-sm-3 control-label no-padding-right" for="form-field-username">手机</label>
+            <div class="col-sm-9">
+              <input class="col-xs-12 col-sm-9" type="text" id="form-field-username" /*placeholder="Username"*/ />
+            </div>
+          </div>
+          <div class="space-4"></div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label no-padding-right" for="form-field-first">性别</label>
+            <div class="col-sm-9">
+              <label class="inline">
+                <input name="form-field-radio" type="radio" class="ace" />
+                <span class="lbl middle"> 男</span> </label>
+              &nbsp; &nbsp; &nbsp;
+              <label class="inline">
+                <input name="form-field-radio" type="radio" class="ace" />
+                <span class="lbl middle"> 女</span> </label>
+            </div>
+          </div>
+        </div>
+        <div class="vspace-12-sm"></div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="form-group">
+            <label class="col-sm-3 control-label no-padding-right" for="form-field-username">电子邮箱</label>
+            <div class="col-sm-9 col-xs-12 lui-tj-iconwarn">
+               <div class="input-group col-xs-12 col-sm-9 ">
+                  <input type="email" name="email" id="email" class="col-xs-12 col-sm-12" />
+                  <span class="input-group-addon">
+                  <i class="ace-icon fa fa-envelope"></i>
+                  </span>
+               </div>
+
+              </div>
+          </div>
+          <div class="space-4"></div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label no-padding-right" for="form-field-first">学历</label>
+            <div class="col-sm-9">
+             <input type="text" name="name" id="name2" class="col-xs-12 col-sm-9" />
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-xs-12 col-sm-6">
+          <div class="form-group">
+            <label class="col-sm-3 control-label no-padding-right" for="form-field-username">收入水平</label>
+            <div class="col-sm-9">
+       
+                <select class="col-md-9 col-xs-12 form-control" id="form-field-select-1" >
+                  <option value="">--请选择--</option>
+                  <option value="AL">阿拉巴马</option>
+                  <option value="AK">阿拉斯加</option>
+                  <option value="AZ">亚利桑那</option>
+                </select>
+        
+            </div>
+          </div>
+          <div class="space-4"></div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label no-padding-right" for="form-field-first">工作单位</label>
+            <div class="col-sm-9">
+              <input class="col-xs-12 col-sm-9" type="text" id="form-field-username" /*placeholder="Username"*/ />
+            </div>
+          </div>
+        </div>
+        <div class="vspace-12-sm"></div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="form-group">
+            <label class="col-sm-3 control-label no-padding-right" for="form-field-username">客户级别</label>
+            <div class="col-sm-9">
+              <input class="col-xs-12 col-sm-9" type="text" id="form-field-username" /*placeholder="Username"*/ />
+            </div>
+          </div>
+          <div class="space-4"></div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label no-padding-right" for="form-field-first">职务</label>
+            <div class="col-sm-9">
+              <input class="col-xs-12 col-sm-9" type="text" id="form-field-username" /*placeholder="Username"*/ />
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-xs-12 col-sm-6">
+          <div class="form-group">
+            <label class="col-sm-3 control-label no-padding-right" for="form-field-username">证件类型</label>
+            <div class="col-sm-9">
+       
+                <select class="col-md-9 col-xs-12 form-control" id="form-field-select-1" >
+                  <option value="">--请选择--</option>
+                  <option value="AL">阿拉巴马</option>
+                  <option value="AK">阿拉斯加</option>
+                  <option value="AZ">亚利桑那</option>
+                </select>
+        
+            </div>
+          </div>
+          <div class="space-4"></div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label no-padding-right" for="form-field-first">信用级别</label>
+            <div class="col-sm-9">
+       
+                <select class="col-md-9 col-xs-12 form-control" id="form-field-select-1" >
+                  <option value="">--请选择--</option>
+                  <option value="AL">阿拉巴马</option>
+                  <option value="AK">阿拉斯加</option>
+                  <option value="AZ">亚利桑那</option>
+                </select>
+        
+            </div>
+          </div>
+        </div>
+        <div class="vspace-12-sm"></div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="form-group">
+            <label class="col-sm-3 control-label no-padding-right" for="form-field-username">身份证号</label>
+            <div class="col-sm-9">
+              <input class="col-xs-12 col-sm-9" type="text" id="form-field-username" /*placeholder="Username"*/ />
+            </div>
+          </div>
+          <div class="space-4"></div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label no-padding-right" for="form-field-first">意向产品</label>
+            <div class="col-sm-9">
+              <input class="col-xs-12 col-sm-9" type="text" id="form-field-username" /*placeholder="Username"*/ />
+            </div>
+          </div>
+        </div>
+      </div>
+      <h4 class="header blue bolder smaller">发货地址信息 <a href="#faq-1-4" data-parent="#faq-list-1" data-toggle="collapse"> <i class="ace-icon fa fa-chevron-up pull-right"   data-icon-hide="ace-icon fa fa-chevron-up" data-icon-show="ace-icon fa fa-chevron-down"></i></a> <!--Social --></h4>
+      <div class="row panel-collapse collapse in"  id="faq-1-4">
+        <div class="col-xs-12 col-sm-6">
+          <div class="form-group">
+            <label class="col-sm-3 control-label no-padding-right" for="form-field-username">国家/地区</label>
+            <div class="col-sm-9">
+              <input class="col-xs-12 col-sm-9" type="text" id="form-field-username" /*placeholder="Username"*/ />
+            </div>
+          </div>
+          <div class="space-4"></div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label no-padding-right" for="form-field-first">城市</label>
+            <div class="col-sm-9">
+              <input class="col-xs-12 col-sm-9" type="text" id="form-field-username" /*placeholder="Username"*/ />
+            </div>
+          </div>
+        </div>
+        <div class="vspace-12-sm"></div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="form-group">
+            <label class="col-sm-3 control-label no-padding-right" for="form-field-username">省/州</label>
+            <div class="col-sm-9">
+              <input class="col-xs-12 col-sm-9" type="text" id="form-field-username" /*placeholder="Username"*/ />
+            </div>
+          </div>
+          <div class="space-4"></div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label no-padding-right" for="form-field-first">街道</label>
+            <div class="col-sm-9">
+              <input class="col-xs-12 col-sm-9" type="text" id="form-field-username" /*placeholder="Username"*/ />
+            </div>
+          </div>
+        </div>
+     
+
+      </div>
+	   <div class="space-20"></div>
+      <div class="clearfix form-actions">
+        <div class=" col-md-12 col-xs-12 ">
+          <div class=" col-xs-6">
+            <button class="btn btn-sm btn-purple" type="button" style="float:right;"> <i class="ace-icon fa fa-check "></i> 保存 </button>
+          </div>
+          <div class="col-xs-offset-0 col-xs-6">
+            <button class="btn btn-sm btn-success" type="reset"> <i class="ace-icon fa fa-undo "></i> 重置 </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!-- /.span --> 
+  
+</div><!-- /.row --> 
+</form>
+
+<script src="LingUI/js/jquery.validate.min.js"></script>
+
+<script type="text/javascript">
+  var scripts = [null,"LingUI/js/jquery.maskedinput.min.js","LingUI/js/select2.min.js","LingUI/js/lui.jiantingdiv.js","LingUI/js/jquery.validate.min.js","LingUI/js/jquery.maskedinput.min.js","LingUI/js/select2.min.js","LingUI/js/jquery-ui.custom.min.js","LingUI/js/chosen.jquery.min.js","LingUI/js/date-time/bootstrap-datepicker.min.js","LingUI/js/jquery.autosize.min.js","LingUI/js/jquery.inputlimiter.1.3.1.min.js","LingUI/js/jquery.maskedinput.min.js", null]
+  ace.load_ajax_scripts(scripts, function() {
+    //inline scripts related to this page
+     jQuery(function($) {
+$(".form-actions").width($(".form-horizontal").width()-40);
+  $(".form-horizontal").resize(function()
+     {
+
+        $(".form-actions").width($(".form-horizontal").width()-40);
+       });
+
+
+    $('.date-picker').datepicker({
+      autoclose: true,
+      todayHighlight: true
+    })
+    //show datepicker when clicking on the icon
+    .next().on(ace.click_event, function(){
+      $(this).prev().focus();
+    });
+  
+    //or change it into a date range picker  
+  });
+  });
+</script>
+<script type="text/javascript">
+      jQuery(function($) {
+      
+     
+      
+      
+        $('#validation-form').validate({
+          errorElement: 'div',
+          errorClass: 'help-block col-md-offset-3 col-sm-offset-3 col-xs-8',
+          focusInvalid: false,
+          rules: {
+            email: {
+              required: true,
+              email:true
+            },
+            password: {
+              required: true,
+              minlength: 5
+            },
+            password2: {
+              required: true,
+              minlength: 5,
+              equalTo: "#password"
+            },
+            name: {
+              required: true
+            },
+            phone: {
+              required: true,
+              phone: 'required'
+            },
+            url: {
+              required: true,
+              url: true
+            },
+            comment: {
+              required: true
+            },
+            state: {
+              required: true
+            },
+            platform: {
+              required: true
+            },
+            subscription: {
+              required: true
+            },
+            gender: {
+              required: true,
+            },
+            agree: {
+              required: true,
+            }
+          },
+      
+          messages: {
+            email: {
+              required: "Please provide a valid email.",
+              email: "Please provide a valid email."
+            },
+            password: {
+              required: "Please specify a password.",
+              minlength: "Please specify a secure password."
+            },
+            state: "Please choose state",
+            subscription: "Please choose at least one option",
+            gender: "Please choose gender",
+            agree: "Please accept our policy"
+          },
+      
+      
+          highlight: function (e) {
+            $(e).closest('.form-group').removeClass('has-info').addClass('has-error');
+          },
+      
+          success: function (e) {
+            $(e).closest('.form-group').removeClass('has-error');//.addClass('has-info');
+            $(e).remove();
+          },
+      
+          errorPlacement: function (error, element) {
+            if(element.is('input[type=checkbox]') || element.is('input[type=radio]')) {
+              var controls = element.closest('div[class*="col-"]');
+              if(controls.find(':checkbox,:radio').length > 1) controls.append(error);
+              else error.insertAfter(element.nextAll('.lbl:eq(0)').eq(0));
+            }
+            else if(element.is('.select2')) {
+              error.insertAfter(element.siblings('[class*="select2-container"]:eq(0)'));
+            }
+            else if(element.is('.chosen-select')) {
+              error.insertAfter(element.siblings('[class*="chosen-container"]:eq(0)'));
+            }
+            else error.insertAfter(element.parent());
+          },
+      
+          submitHandler: function (form) {
+          },
+          invalidHandler: function (form) {
+          }
+        });
+      
+        
+        
+
+      })
+    </script>

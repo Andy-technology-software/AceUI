@@ -1,0 +1,544 @@
+<title>jqGrid - Ace Admin</title>
+<style>
+.page-content{padding-bottom:0;}
+.form-actions{position:fixed;bottom:0;z-index:99;margin-bottom:0;padding: 12px 20px 12px;}
+
+</style>
+<div class="row">
+	<div class="col-xs-12 col-sm-12 widget-container-col lui-lcy">
+										<div class="widget-box" style="margin:0;">
+											<div class="widget-header ">
+											
+												<h5 class="widget-title">中康企业-玻璃</h5>
+
+												<div class="widget-toolbar">
+													
+													<a href="#" data-action="settings">
+														<i class="ace-icon fa fa-cog"></i>
+													</a>
+													
+													<a href="#" data-action="fullscreen" class="orange2">
+														<i class="ace-icon fa fa-expand"></i>
+													</a>
+
+													<a href="#" data-action="reload">
+														<i class="ace-icon fa fa-refresh"></i>
+													</a>
+
+													<a href="#" data-action="collapse">
+														<i class="ace-icon fa fa-chevron-up"></i>
+													</a>
+
+													
+												</div>
+											</div>
+
+											<div class="widget-body">
+												<div class="widget-main" style="padding-bottom:0;">
+													<div class="row">
+														<div class="col-sm-12">
+															<div class="col-sm-3">
+																<h5 class=" lui-lc-hxx">
+														<i class="ace-icon fa fa-location-arrow bigger-120"></i>
+														<span class="lui-lc-dzjc">地址：</span><span class="lui-lc-nrcolr">青岛开发区嘉陵江西路</span>
+													</h5>
+															</div>
+															<div class="col-sm-3">
+																<h5 class="lui-lc-hxx">
+														<i class="ace-icon fa fa-user bigger-120"></i>
+														<span class="lui-lc-dzjc">联系人：</span><span class="lui-lc-nrcolr">中康企业-玻璃 </span>
+													</h5>
+															</div>
+															<div class="col-sm-3">
+																<h5 class=" lui-lc-hxx">
+														<i class="ace-icon fa fa-phone bigger-120 "></i>
+														<span class="lui-lc-dzjc">电话：</span><span class="lui-lc-nrcolr">0532-85468132</span>
+													</h5>
+															</div>
+														</div>
+													</div>
+													<div class="space-10"></div>
+													<div class="row">
+														<div class="col-md-12 liucheng" style="padding-right:0px;">
+															<div id="fuelux-wizard" data-target="#step-container">
+												<ul class="wizard-steps">
+													<li data-target="#step1" class="huise">
+														<span class="step"><i class="ace-icon fa fa-flag"></i></span>
+														<span class="title">开始</span>
+													</li>
+
+													<li data-target="#step2" class="lvse">
+														<span class="step"><i class="ace-icon fa fa-pencil"></i></span>
+														<span class="title">线索</span>
+													</li>
+
+													<li data-target="#step3" class="huangse">
+														<span class="step"><i class="ace-icon fa fa-send"></i></span>
+														<span class="title">销售机会</span>
+													</li>
+
+													<li data-target="#step4" class="fense"> 
+														<span class="step"><i class="ace-icon fa fa-file-text-o"></i></span>
+														<span class="title">合同/订单</span>
+													</li>
+													<li data-target="#step5" class="zise">
+														<span class="step"><i class="ace-icon fa fa-check-square"></i></span>
+														<span class="title">交付</span>
+													</li>
+													<li data-target="#step6" class="lanse">
+														<span class="step"><i class="ace-icon fa fa-database"></i></span>
+														<span class="title">回款</span>
+													</li>
+													<li data-target="#step7" class="hongse">
+														<span class="step"><i class="ace-icon fa fa-circle-o"></i></span>
+														<span class="title">结束</span>
+													</li>
+												</ul>
+												
+
+											</div>
+											
+											
+														</div>
+													</div>
+													<div class="space-14"></div>
+													<div class="row" style="border:1px solid #C5D0DC";>
+													<div class="col-md-12" style="padding-left:0px;padding-right:0px;">
+										<div class="tabbable tabs-left">
+											<ul class="nav nav-tabs" id="myTab3" style="border-right:1px solid #C5D0DC">
+												<li class="active">
+													<a data-toggle="tab" href="#home3" style="border-top:none;">
+														<i class=" ace-icon fa fa-pencil"></i>
+														线索
+													</a>
+												</li>
+
+												<li>
+													<a data-toggle="tab" href="#profile3">
+														<i class=" ace-icon fa fa-send"></i>
+														销售机会
+													</a>
+												</li>
+
+												
+												<li>
+													<a data-toggle="tab" href="#dropdown13">
+														<i class="ace-icon fa fa-file-text-o"></i>
+														合同管理
+													</a>
+												</li>
+												<li>
+													<a data-toggle="tab" href="#dropdown13">
+														<i class="ace-icon fa fa-file-o"></i>
+														订单管理
+													</a>
+												</li>
+												<li>
+													<a data-toggle="tab" href="#dropdown13">
+														<i class="ace-icon fa fa-check-square"></i>
+														交付管理
+													</a>
+												</li>
+												<li>
+													<a data-toggle="tab" href="#dropdown13">
+														<i class="ace-icon fa fa-database"></i>
+														回款管理
+													</a>
+												</li>
+												<li>
+													<a data-toggle="tab" href="#dropdown13">
+														<i class="ace-icon fa fa-list-alt"></i>
+														客户信息
+													</a>
+												</li>
+												<li>
+													<a data-toggle="tab" href="#dropdown13" style="border-bottom:none;">
+														<i class="ace-icon fa fa-user"></i>
+														联系人
+													</a>
+												</li>
+												<li>
+													<a data-toggle="tab" href="#dropdown13">
+														<i class="ace-icon fa fa-edit"></i>
+														跟进记录
+													</a>
+												</li>
+											</ul>
+
+											<div class="tab-content" id="liuchengkuang">
+												<div id="home3" class="tab-pane in active">
+													
+<div class="row">
+  <div class="col-xs-12">
+    <form class="form-horizontal">
+      <div class="tabbable">
+        <h4 class="header blue bolder smaller">客户基本信息<a href="#faq-1-2" data-parent="#faq-list-1" data-toggle="collapse"> <i class="ace-icon fa fa-chevron-up pull-right"   data-icon-hide="ace-icon fa fa-chevron-up" data-icon-show="ace-icon fa fa-chevron-down"></i></a> <!--Social --></h4>
+        <div class="row panel-collapse collapse in"  id="faq-1-2">
+          <div class="col-xs-12 col-sm-6">
+            <div class="form-group">
+              <label class="col-sm-2 control-label no-padding-right" for="form-field-username">客户名称</label>
+              <div class="col-sm-10">
+                <input class="col-xs-12 col-sm-6" type="text" id="form-field-username" /*placeholder="Username"*/ />
+              </div>
+            </div>
+            <div class="space-4"></div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label no-padding-right" for="form-field-first">电话</label>
+              <div class="col-sm-10">
+                <input class="col-xs-12 col-sm-6" type="text" id="form-field-username" /*placeholder="Username"*/ />
+              </div>
+            </div>
+          </div>
+          <div class="vspace-12-sm"></div>
+          <div class="col-xs-12 col-sm-6">
+            <div class="form-group">
+              <label class="col-sm-2 control-label no-padding-right" for="form-field-username">所在区域</label>
+              <div class="col-sm-10">
+              <div class="col-sm-6 lui-pd0">
+                <select class="form-control col-xs-12" id="form-field-select-1" >
+                  <option value="">--请选择--</option>
+                  <option value="AL">阿拉巴马</option>
+                  <option value="AK">阿拉斯加</option>
+                  <option value="AZ">亚利桑那</option>
+                </select>
+              </div>
+            </div>
+            </div>
+          
+          </div>
+          <div class="col-xs-12 col-sm-12"></div>
+          <div class="col-xs-12 col-sm-6">
+            <div class="form-group">
+              <label class="col-sm-2 control-label no-padding-right" for="form-field-username">地址</label>
+              <div class="col-sm-10">
+                <input class="col-xs-12 col-sm-6" type="text" id="form-field-username" /*placeholder="Username"*/ />
+              </div>
+            </div>
+            <div class="space-4"></div>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="header blue bolder smaller accordion-toggle collapsed">关联用户信息<a href="#faq-1-1" data-parent="#faq-list-1" data-toggle="collapse"> <i class="ace-icon fa fa-chevron-up pull-right"   data-icon-hide="ace-icon fa fa-chevron-up" data-icon-show="ace-icon fa fa-chevron-down"></i></a><!--Social --></h4>
+
+      <div class="row panel-collapse collapse in"  id="faq-1-1">
+        <div class="col-xs-12 col-sm-6">
+          <div class="form-group">
+            <label class="col-sm-2 control-label no-padding-right" for="form-field-username">所有者</label>
+            <div class="col-sm-10">
+              <div class="col-sm-6 lui-pd0">
+                <select class="form-control col-xs-12" id="form-field-select-1" >
+                  <option value="">--请选择--</option>
+                  <option value="AL">阿拉巴马</option>
+                  <option value="AK">阿拉斯加</option>
+                  <option value="AZ">亚利桑那</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="vspace-12-sm"></div>
+      </div>
+      <h4 class="header blue bolder smaller">个人详细信息<a href="#faq-1-3" data-parent="#faq-list-1" data-toggle="collapse"> <i class="ace-icon fa fa-chevron-up pull-right"   data-icon-hide="ace-icon fa fa-chevron-up" data-icon-show="ace-icon fa fa-chevron-down"></i></a> </h4>
+      <div class="row panel-collapse collapse in"  id="faq-1-3">
+        <div class="col-xs-12 col-sm-6">
+          <div class="form-group">
+            <label class="col-sm-2 control-label no-padding-right" for="form-field-username">手机</label>
+            <div class="col-sm-10">
+              <input class="col-xs-12 col-sm-6" type="text" id="form-field-username" /*placeholder="Username"*/ />
+            </div>
+          </div>
+          <div class="space-4"></div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label no-padding-right" for="form-field-first">性别</label>
+            <div class="col-sm-10">
+              <label class="inline">
+                <input name="form-field-radio" type="radio" class="ace" />
+                <span class="lbl middle"> 男</span> </label>
+              &nbsp; &nbsp; &nbsp;
+              <label class="inline">
+                <input name="form-field-radio" type="radio" class="ace" />
+                <span class="lbl middle"> 女</span> </label>
+            </div>
+          </div>
+        </div>
+        <div class="vspace-12-sm"></div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="form-group">
+            <label class="col-sm-2 control-label no-padding-right" for="form-field-username">电子邮箱</label>
+            <div class="col-sm-10">
+              <input class="col-xs-12 col-sm-6" type="text" id="form-field-username" /*placeholder="Username"*/ />
+            </div>
+          </div>
+          <div class="space-4"></div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label no-padding-right" for="form-field-first">学历</label>
+            <div class="col-sm-10">
+              <input class="col-xs-12 col-sm-6" type="text" id="form-field-username" /*placeholder="Username"*/ />
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-xs-12 col-sm-6">
+          <div class="form-group">
+            <label class="col-sm-2 control-label no-padding-right" for="form-field-username">收入水平</label>
+            <div class="col-sm-10">
+         
+                <select class="form-control col-xs-6" id="form-field-select-1" >
+                  <option value="">--请选择--</option>
+                  <option value="AL">阿拉巴马</option>
+                  <option value="AK">阿拉斯加</option>
+                  <option value="AZ">亚利桑那</option>
+                </select>
+          
+            </div>
+          </div>
+          <div class="space-4"></div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label no-padding-right" for="form-field-first">工作单位</label>
+            <div class="col-sm-10">
+              <input class="col-xs-12 col-sm-6" type="text" id="form-field-username" /*placeholder="Username"*/ />
+            </div>
+          </div>
+        </div>
+        <div class="vspace-12-sm"></div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="form-group">
+            <label class="col-sm-2 control-label no-padding-right" for="form-field-username">客户级别</label>
+            <div class="col-sm-10">
+              <input class="col-xs-12 col-sm-6" type="text" id="form-field-username" /*placeholder="Username"*/ />
+            </div>
+          </div>
+          <div class="space-4"></div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label no-padding-right" for="form-field-first">职务</label>
+            <div class="col-sm-10">
+              <input class="col-xs-12 col-sm-6" type="text" id="form-field-username" /*placeholder="Username"*/ />
+            </div>
+          </div>
+        </div>
+    <div class="col-sm-12">
+        <div class="col-xs-12 col-sm-6">
+          <div class="form-group">
+            <label class="col-sm-2 control-label lui-pdf0" for="form-field-username">证件类型</label>
+             <div class="col-sm-10 lui-pdf0">
+         
+                <select class="form-control col-xs-6 " id="form-field-select-1" >
+                  <option value="">--请选择--</option>
+                  <option value="AL">阿拉巴马</option>
+                  <option value="AK">阿拉斯加</option>
+                  <option value="AZ">亚利桑那</option>
+                </select>
+          
+            </div>
+          </div>
+          <div class="space-4"></div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label lui-pdf0" for="form-field-first">信用级别</label>
+           <div class="col-sm-10 lui-pdf0">
+              <div class="col-sm-6 lui-pd0">
+                <select class="form-control col-xs-12" id="form-field-select-1" >
+                  <option value="">--请选择--</option>
+                  <option value="AL">阿拉巴马</option>
+                  <option value="AK">阿拉斯加</option>
+                  <option value="AZ">亚利桑那</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="vspace-12-sm"></div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="form-group">
+            <label class="col-sm-2 control-label no-padding-right" for="form-field-username">身份证号</label>
+            <div class="col-sm-10">
+              <input class="col-xs-12 col-sm-6" type="text" id="form-field-username" /*placeholder="Username"*/ />
+            </div>
+          </div>
+          <div class="space-4"></div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label no-padding-right" for="form-field-first">意向产品</label>
+            <div class="col-sm-10">
+              <input class="col-xs-12 col-sm-6" type="text" id="form-field-username" /*placeholder="Username"*/ />
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <h4 class="header blue bolder smaller">发货地址信息 <a href="#faq-1-4" data-parent="#faq-list-1" data-toggle="collapse"> <i class="ace-icon fa fa-chevron-up pull-right"   data-icon-hide="ace-icon fa fa-chevron-up" data-icon-show="ace-icon fa fa-chevron-down"></i></a> <!--Social --></h4>
+      <div class="row panel-collapse collapse in"  id="faq-1-4" style="margin-bottom:40px;">
+        <div class="col-xs-12 col-sm-6">
+          <div class="form-group">
+            <label class="col-sm-2 control-label no-padding-right" for="form-field-username">国家/地区</label>
+            <div class="col-sm-10">
+              <input class="col-xs-12 col-sm-6" type="text" id="form-field-username" /*placeholder="Username"*/ />
+            </div>
+          </div>
+          <div class="space-4"></div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label no-padding-right" for="form-field-first">城市</label>
+            <div class="col-sm-10">
+              <input class="col-xs-12 col-sm-6" type="text" id="form-field-username" /*placeholder="Username"*/ />
+            </div>
+          </div>
+        </div>
+        <div class="vspace-12-sm"></div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="form-group">
+            <label class="col-sm-2 control-label no-padding-right" for="form-field-username">省/州</label>
+            <div class="col-sm-10">
+              <input class="col-xs-12 col-sm-6" type="text" id="form-field-username" /*placeholder="Username"*/ />
+            </div>
+          </div>
+          <div class="space-4"></div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label no-padding-right" for="form-field-first">街道</label>
+            <div class="col-sm-10">
+              <input class="col-xs-12 col-sm-6" type="text" id="form-field-username" /*placeholder="Username"*/ />
+            </div>
+          </div>
+        </div>
+     
+        <div class="col-xs-12 col-sm-6">
+          <div class="form-group">
+            <label class="col-sm-2 control-label no-padding-right" for="form-field-username">发货地址</label>
+            <div class="col-sm-10">
+              <input class="col-xs-12 col-sm-6" type="text" id="form-field-username" /*placeholder="Username"*/ />
+            </div>
+          </div>
+          <div class="space-4"></div>
+        </div>
+        <div class="vspace-12-sm"></div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="form-group">
+            <label class="col-sm-2 control-label no-padding-right" for="form-field-username">邮编</label>
+            <div class="col-sm-10">
+              <input class="col-xs-12 col-sm-6" type="text" id="form-field-username" /*placeholder="Username"*/ />
+            </div>
+          </div>
+          <div class="space-4"></div>
+        </div>
+      </div>
+      <div class="clearfix form-actions">
+        <div class=" col-md-12 col-xs-12 ">
+          <div class=" col-xs-6">
+            <button class="btn btn-sm btn-success" type="button" style="float:right;"> <i class="ace-icon fa fa-check "></i> 保存 </button>
+          </div>
+          <div class="col-xs-offset-0 col-xs-6">
+            <button class="btn btn-sm btn-purple" type="reset"> <i class="ace-icon fa fa-undo "></i> 重置 </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!-- /.span --> 
+  
+</div><!-- /.row --> 
+
+												</div>
+
+												<div id="profile3" class="tab-pane">
+													<div class="row">
+	<div class="col-xs-12">
+		<!-- PAGE CONTENT BEGINS -->
+
+
+								<table id="grid-table"></table>
+
+								<div id="grid-pager"></div>
+
+								<script type="text/javascript">
+									var $path_base = ".";//in Ace demo this will be us
+								</script>
+
+		<!-- PAGE CONTENT ENDS -->
+	</div><!-- /.col -->
+</div><!-- /.row -->
+												</div>
+
+												<div id="dropdown13" class="tab-pane">
+													<p>飞机上的题色粉额的个特殊人老夫妻为人父让李伟5哦一会白色肉片网易和帮助E更换发票问题 开发票我色图</p>
+													<p>看惹我儿科微热肉3；如听4【儿童为鬼地方个无色骗死人我付款为普洱通过人缘好题客网 </p>
+												</div>
+											</div>
+										</div>
+										</div></div>
+													
+												</div>
+											</div>
+										</div>
+</div><!-- /.row -->
+<div class="side">
+  <ul>
+    <li><a href="http://www.sucaijiayuan.com/" target="_blank"><div class="sidebox"><i class="ace-icon fa fa-trash-o"></i><span>客服中心</span></div></a></li>
+    <li><a href="http://www.sucaijiayuan.com/" target="_blank"><div class="sidebox"><i class="fa fa-pencil"></i><span>客户案例</span></div></a></li>
+    <li><a href="http://wpa.qq.com/msgrd?v=3&uin=954502368&site=qq&menu=yes" target="_blank"><div class="sidebox"><i class="fa fa-plus"></i><span>QQ客服</span></div></a></li>
+
+    <li style="border:none;"><a href="javascript:goTop();"><div class="sidebox"><i class="fa  fa-arrow-circle-up "></i><span>返回顶部</span></div></a></li>
+  </ul>
+</div>
+<!-- page specific plugin scripts -->
+<script type="text/javascript">
+	var scripts = [null,"LingUI/js/lui.jiantingdiv.js",null]
+	ace.load_ajax_scripts(scripts, function() {
+	  //inline scripts related to this page
+		 jQuery(function($) {
+	
+		window.prettyPrint && prettyPrint();
+		$('#id-check-horizontal').removeAttr('checked').on('click', function(){
+			$('#dt-list-1').toggleClass('dl-horizontal').prev().html(this.checked ? '&lt;dl class="dl-horizontal"&gt;' : '&lt;dl&gt;');
+		});
+
+       bh=$("#myTab3").height();
+			ah=$("#liuchengkuang").height();
+			ch=ah-bh;
+			$("#myTab3").css("padding-bottom",ch+32);
+			
+       $("#liuchengkuang").resize(function()
+	   {
+
+		     bh=$("#myTab3").height();
+			ah=$("#liuchengkuang").height();
+		 if(ah>bh){
+			ch=ah-bh;
+			$("#myTab3").css("padding-bottom",ch+32);
+			}else{
+			$("#myTab3").css("padding-bottom",0);}
+       })
+		
+			
+
+	
+	})
+	});
+	
+
+$(document).ready(function(){
+  $(".side ul li").hover(function(){
+    $(this).find(".sidebox").stop().animate({"width":"124px"},200).css({"opacity":"1","filter":"Alpha(opacity=100)","background":"#6fb3e0","color":"#fff"})  
+  },function(){
+    $(this).find(".sidebox").stop().animate({"width":"40px"},200).css({"opacity":"1","filter":"Alpha(opacity=100)","background":"#F1F2F1","color":"#8B8C8B"}) 
+  });
+  
+});
+//回到顶部
+function goTop(){
+  $('html,body').animate({'scrollTop':0},600); //滚回顶部的时间，越小滚的速度越快~
+}
+
+
+  var scripts = [null,"LingUI/js/lui.jiantingdiv.js", null]
+  ace.load_ajax_scripts(scripts, function() {
+    //inline scripts related to this page
+     jQuery(function($) {
+  $(".form-actions").width($(".form-horizontal").width()-40);
+  $(".form-horizontal").resize(function()
+     {
+
+        $(".form-actions").width($(".form-horizontal").width()-40);
+       })
+    
+  
+  })
+  });
+</script>
